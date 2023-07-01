@@ -8,18 +8,6 @@ import { Link } from 'react-router-dom';
 const BlogPage = ({ id, title, image, content }) => {
   return (
     <div className='blog-bg'>
-      <Helmet>
-        <meta charSet='utf-8' />
-        <title>{title}</title>
-        <meta property='og:title' content={title} />
-        <meta name="description" content={content} />
-        <meta property='og:type' content='blog' />
-        <meta property='og:url' content={`https://cvlanes.com/blogs/${id}`} />
-        <meta property="og:image" content={image} />
-        <meta property='og:image:width' content='1200' />
-        <meta property='og:image:height' content='630' />
-        <meta name='image:alt' content={title} />
-      </Helmet>
 
       <ScrollToTop />
       <TopNavGeneric />
