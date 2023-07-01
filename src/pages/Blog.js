@@ -9,7 +9,6 @@ const BlogPage = () => {
 
         <div className='blog-bg'> {/* className="App overflow-x-hidden" */}
 
-            <ScrollToTop />
             <TopNavGeneric />
             <div className="blog" id="blog">
                 <div className="container">

@@ -8,7 +8,6 @@ const Portfolio = () => {
 
         <div className='portfolio-bg'>
 
-            <ScrollToTop />
             <TopNavGeneric />
             <div className="portfolio" id="portfolio">
                 <div className="container">
