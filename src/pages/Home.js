@@ -283,7 +283,7 @@ class App extends React.Component {
                             </div>
                         </div>
                         <div className='wow slideInRight col-md-5 col-sm-12 image-col-align pt-5' data-wow-delay="0.2s">
-                            <img src='../img/dw.png' alt='DW' className='image-col' />
+                            <img src={require("../img/dw.png")} alt='DW' className='image-col' />
 
                         </div>
                     </div>
