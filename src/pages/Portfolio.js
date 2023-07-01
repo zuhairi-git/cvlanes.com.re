@@ -31,7 +31,7 @@ const Portfolio = () => {
                 <Row>
                 <Col md={4} className='mb-5'>
                         <Card className='border bordered-1'>
-                            <Card.Img className='card-hero-top' variant="top" src="../img/jobseeking-cover.jpeg" />
+                            <Card.Img className='card-hero-top' variant="top" src={require("../img/jobseeking-cover.jpeg")} />
                            <Card.Body className='card-content'>
                                 <Card.Title>Job Seeking</Card.Title>
                                 <Card.Text>
@@ -45,7 +45,7 @@ const Portfolio = () => {
 
                     <Col md={4} className='mb-5'>
                         <Card className='border bordered-1'>
-                            <Card.Img className='card-hero-top' variant="top" src="../img/collaboration/cwp.png" />
+                            <Card.Img className='card-hero-top' variant="top" src={require("../img/collaboration/cwp.png")} />
                            <Card.Body className='card-content'>
                                 <Card.Title>Collaboration Workflow Platform</Card.Title>
                                 <Card.Text>
@@ -59,7 +59,7 @@ const Portfolio = () => {
 
                     <Col md={4} className='mb-5'>
                         <Card className='border bordered-1'>
-                            <Card.Img className='card-hero-top' variant="top" src="../img/smart-shopping/smart-shopping-cover.jpg" />
+                            <Card.Img className='card-hero-top' variant="top" src={require("../img/smart-shopping/smart-shopping-cover.jpg")} />
                            <Card.Body className='card-content'>
                                 <Card.Title>Smart Shopping</Card.Title>
                                 <Card.Text>
@@ -73,7 +73,7 @@ const Portfolio = () => {
 
                     <Col md={4} className='mb-5'>
                         <Card className='border bordered-1'>
-                            <Card.Img className='card-hero-top' variant="top" src="../img/smart-banking/hassle-free-banking.jpg" />
+                            <Card.Img className='card-hero-top' variant="top" src={require("../img/smart-banking/hassle-free-banking.jpg")} />
                            <Card.Body className='card-content'>
                                 <Card.Title>Smart Banking</Card.Title>
                                 <Card.Text>
