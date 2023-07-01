@@ -5,9 +5,10 @@ import TypewriterComponent from 'typewriter-effect';
 import Hero from '../img/Hero-left.png'
 import MyCV from '../pdf/CV.pdf'
 import TopNav from '../pages/TopNav';
-import { Tiktok, Youtube } from "react-bootstrap-icons";
+import { Envelope, Facebook, Tiktok, Twitter, Youtube } from "react-bootstrap-icons";
 import Footer from '../pages/Footer'
 import FormatQuoteIcon from '@mui/icons-material/FormatQuote';
+import { LinkedIn } from '@mui/icons-material';
 
 class App extends React.Component {
     componentDidMount() {
@@ -306,14 +307,14 @@ class App extends React.Component {
                                                 <h4 style={{ marginBottom: '0', lineHeight: '20px' }}>Creative Problem-Solving, Divergent Thinking, Thoughtful Disruption & Exploring New Perspectives</h4>
                                             </div>
                                             <div className="team-social pb-1">
-                                                <a className="buttonIcon" href="https://twitter.com/AliZohairi"><i className="fab fa-twitter"></i></a>
-                                                <a className="buttonIcon" href="https://www.linkedin.com/in/ali-zuhairi/"><i className="fab fa-linkedin-in"></i></a>
-                                                <a className="buttonIcon" href="https://www.facebook.com/zuhairi.one"><i className="fab fa-facebook-f"></i></a>
+                                                <a className="buttonIcon" href="https://twitter.com/AliZohairi"><Twitter /></a>
+                                                <a className="buttonIcon" href="https://www.linkedin.com/in/ali-zuhairi/"><LinkedIn /></a>
+                                                <a className="buttonIcon" href="https://www.facebook.com/zuhairi.one"><Facebook /></a>
                                             </div>
                                             <div className="team-social">
                                                 <a className="buttonIcon" href="https://www.tiktok.com/@zuhairi.ali"><Tiktok /></a>
                                                 <a className="buttonIcon" href="https://www.youtube.com/@Ali.Zuhairi"><Youtube /></a>
-                                                <a className="buttonIcon" href="mailto:zohairi@live.com"><i className="fa fa-envelope"></i></a>
+                                                <a className="buttonIcon" href="mailto:zohairi@live.com"><Envelope /></a>
                                             </div>
                                         </div>
                                     </div>
