@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import {iPhoneNotification} from '../img/blog/iphone-mail-notifications.jpg'
-import {DailyRhythm} from '../img/blog-writing.jpg'
+
 const BlogPage = ({ id, title, to, image, content }) => {
   const handleClick = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -27,7 +26,7 @@ const BlogList = () => {
       id: 1,
       title: 'Circle of Daily Rhythm',
       to: '/blogs/circle-of-rhythm',
-      image: '../img/blog-writing.jpg',
+      image: require('../img/blog-writing.jpg'),
       content: 'The circle of daily rhythm is the pattern of behaviors and activities that one follows throughout a typical day.',
       hidden: false,
     },
@@ -36,7 +35,7 @@ const BlogList = () => {
       id: 2,
       title: 'How to get notifications on iOS with personal focus on?',
       to: '/blogs/ios-notifications',
-      image: '../img/blog/iphone-mail-notifications.jpg',
+      image: require('../img/blog/iphone-mail-notifications.jpg'),
       content: 'Are you one of those people who have been experiencing difficulty getting notifications on your iPhone lately?',
       hidden: false,
     },
@@ -45,7 +44,7 @@ const BlogList = () => {
       id: 3,
       title: "Embracing the Era of AI",
       to: '/blogs/premitive-human',
-      image: '../img/blog/Human-AI/chess-ai.webp',
+      image: require('../img/blog/Human-AI/chess-ai.webp'),
       content: 'I have a feeling that with the progress of AI and the advancements in machine learning, our world will reach such a level of sophistication that most humans may appear primitive once more.',
       hidden: false,
     },
