@@ -49,7 +49,7 @@ class App extends React.Component {
                                             <div className="reminderSelf text-start mt-4 mb-5">
                                                 <h5 className='reminderSelf'>NOTE TO SELF</h5>
                                                 <div className='text-light'>
-                                                    <FormatQuoteIcon /> Feeling discouraged when you're unable to achieve your goals, despite trying different methods and staying persistent, does not define you as a failure. It's important to remember that setbacks and challenges are a natural part of the journey towards success. Achieving success is a journey, and it's crucial to continue pushing forward until you reach your desired outcome.<FormatQuoteIcon />
+                                                    <FormatQuoteIcon /> Always remember to seek inspiration from the world around you. The smallest details and the foremost wonders can ignite a spark within your mind and lead you to create something exceptional. Allow your imagination to roam freely, unbound by limitations, and be fearless in pushing the boundaries of what's possible.<FormatQuoteIcon />
                                                 </div>
                                                 <i className='text-light'><b>- Ali</b></i>
                                             </div>
