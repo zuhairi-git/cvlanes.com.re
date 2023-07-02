@@ -38,7 +38,7 @@ const PortfolioList = () => {
             id: 2,
             title: 'Collaboration Workflow Platform',
             subtitle: "Inprogress..",
-            to: '/portfolio/collaboratio',
+            to: '/portfolio/collaboration',
             image: require('../img/collaboration/cwp.png'),
             content: 'Enabling a smooth and effective system for real-time collaboration on documents.',
             hidden: false,
