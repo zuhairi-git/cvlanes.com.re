@@ -65,7 +65,7 @@ class App extends React.Component {
                                     <p>Figma, Figma Jam, Maze</p>
                                 </div>
                                 <div>
-                                    <img src='/img/collaboration/Platforms.png' className='w-100 mt-4 border-thin pill-image' alt='Image'></img>
+                                    <img src={require('../img/collaboration/Platforms.png')} className='w-100 mt-4 border-thin pill-image' alt='Image'></img>
                                 </div>
                                 <hr className='m-5 border border-lite' />
                             </div>
@@ -121,7 +121,7 @@ class App extends React.Component {
                         <div className='m-lg-5 m-xs-3 m-sm-3'>
                             <hr className='m-5 border border-lite' />
                             <h2 className='primary-title'>Design Process</h2>
-                            <img src='../img/jobseeking/DesignProcess.jpg' className="w-100" alt="cover" />
+                            <img src={require('../img/jobseeking/DesignProcess.jpg')} className="w-100" alt="cover" />
                         </div>
                         <div className="m-lg-5 m-xs-3 m-sm-3">
                             <p>Double Diamond Design Model</p>
@@ -338,7 +338,7 @@ class App extends React.Component {
                                         <Card.Title className='primary-title'>
                                             <Row>
                                                 <Col className='col-auto'>
-                                                    <img src="../img/collaboration/avatars/john.png" className="avatars" alt='Image'/>
+                                                    <img src={require("../img/collaboration/avatars/john.png")} className="avatars" alt='Image'/>
 
                                                 </Col>
                                                 <Col className='col-auto'>
@@ -368,7 +368,7 @@ class App extends React.Component {
                                         <Card.Title className='primary-title'>
                                             <Row>
                                                 <Col className='col-auto'>
-                                                    <img src="../img/collaboration/avatars/julia.png" className="avatars" alt='Image'/>
+                                                    <img src={require("../img/collaboration/avatars/julia.png")} className="avatars" alt='Image'/>
 
                                                 </Col>
                                                 <Col className='col-auto'>
@@ -477,7 +477,7 @@ class App extends React.Component {
                             </div>
                             <div className='col-sm-12 col-md-9 mb-lg-5 mb-xs-2 mb-sm-2'>
                                 <p>Inprogress</p>
-                                <img src='/img/collaboration/Collaboration-Workflow-UJ.jpg' className='mt-4 rounded-5 w-100'alt='Image'></img>
+                                <img src={require('../img/collaboration/Collaboration-Workflow-UJ.jpg')} className='mt-4 rounded-5 w-100'alt='Image'></img>
                             </div>
                         </div>
                     </div>
@@ -561,7 +561,7 @@ class App extends React.Component {
                             </div>
                             <div className='col-sm-12 col-md-9 mb-lg-5 mb-xs-2 mb-sm-2'>
                                 <p><b>Collaboration</b> Plays a <i className='text-decoration-none'> Key</i> Role in Fostering a Seamless <b>Workflow</b>.</p>
-                                <img src='/img/collaboration/logo-options.png' className='mt-4 rounded-5 w-100'></img>
+                                <img src={require('../img/collaboration/logo-options.png')} className='mt-4 rounded-5 w-100'></img>
                             </div>
                         </div>
                     </div>
