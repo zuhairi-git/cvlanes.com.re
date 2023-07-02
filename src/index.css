@@ -12,6 +12,13 @@
 # Main
 
 --------------------------------------------------------------*/
+.back-to-top-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+  }
+
 .brandColors {
     color: #1EB6C3;
     color: #C8E7EA;

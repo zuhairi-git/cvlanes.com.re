@@ -5,6 +5,7 @@ import TypewriterComponent from 'typewriter-effect';
 import Hero from '../img/Hero-left.png'
 import MyCV from '../pdf/CV.pdf'
 import TopNav from '../pages/TopNav';
+import BackToTopButton from '../generic/BackToTopButton';
 import { Envelope, Facebook, Tiktok, Twitter, Youtube } from "react-bootstrap-icons";
 import Footer from '../pages/Footer'
 import FormatQuoteIcon from '@mui/icons-material/FormatQuote';
@@ -401,6 +402,7 @@ class App extends React.Component {
                             </div>
                         </div>
                     </div>
+                    <BackToTopButton />
                     <Footer />
 
                 </div>
