@@ -84,7 +84,7 @@ class App extends React.Component {
                                 A highly sophisticated service may provide a wide range of advanced options and customization, but can be challenging for users who are not familiar with the technology.
                             </p>
                             <p>
-                                In contrast, a simple service may have fewer features and options, but it can be more straightforward to understand and use even for those without technical expertise. 
+                                In contrast, a simple service may have fewer features and options, but it can be more straightforward to understand and use even for those without technical expertise.
                                 Ultimately, the choice between sophistication and simplicity depends on the user's priorities and how they intend to use the service.
                             </p>
                             <p>My Objectives In This Project:</p>
@@ -134,8 +134,9 @@ class App extends React.Component {
                         </div>
                     </div>
 
-                    <div className='brand-bg p-5'>
+                    <div className='custom-bg p-5 text-center'>
                         <h2 className='primary-title primary-title-color'>Discover Phase</h2>
+                        <div class="titleUnderLineBrand"></div>
                     </div>
                     <div className="container-fluid mb-2">
                         <div className="row m-lg-5 m-xs-2 m-sm-2 mt-3">
@@ -322,8 +323,9 @@ class App extends React.Component {
                         </div>
                     </div>
 
-                    <div className='brand-bg p-5'>
+                    <div className='custom-bg p-5 text-center'>
                         <h2 className='primary-title primary-title-color'>Define Phase</h2>
+                        <div class="titleUnderLineBrand"></div>
                     </div>
                     <div className="container-fluid mb-2">
                         <Row className='m-lg-5 m-xs-2 m-sm-2 mt-3 mt-3'>
@@ -338,7 +340,7 @@ class App extends React.Component {
                                         <Card.Title className='primary-title'>
                                             <Row>
                                                 <Col className='col-auto'>
-                                                    <img src={require("../img/collaboration/avatars/john.png")} className="avatars" alt='Image'/>
+                                                    <img src={require("../img/collaboration/avatars/john.png")} className="avatars" alt='Image' />
 
                                                 </Col>
                                                 <Col className='col-auto'>
@@ -368,7 +370,7 @@ class App extends React.Component {
                                         <Card.Title className='primary-title'>
                                             <Row>
                                                 <Col className='col-auto'>
-                                                    <img src={require("../img/collaboration/avatars/julia.png")} className="avatars" alt='Image'/>
+                                                    <img src={require("../img/collaboration/avatars/julia.png")} className="avatars" alt='Image' />
 
                                                 </Col>
                                                 <Col className='col-auto'>
@@ -457,8 +459,9 @@ class App extends React.Component {
                         </div>
                     </div>
 
-                    <div className='brand-bg p-5'>
+                    <div className='custom-bg p-5 text-center'>
                         <h2 className='primary-title primary-title-color'>Develope Phase</h2>
+                        <div class="titleUnderLineBrand"></div>
                     </div>
                     <div className="container-fluid mb-2">
                         <div className="row m-lg-5 m-xs-2 m-sm-2 mt-3">
@@ -477,7 +480,7 @@ class App extends React.Component {
                             </div>
                             <div className='col-sm-12 col-md-9 mb-lg-5 mb-xs-2 mb-sm-2'>
                                 <p>Inprogress</p>
-                                <img src={require('../img/collaboration/Collaboration-Workflow-UJ.jpg')} className='mt-4 rounded-5 w-100'alt='Image'></img>
+                                <img src={require('../img/collaboration/Collaboration-Workflow-UJ.jpg')} className='mt-4 rounded-5 w-100' alt='Image'></img>
                             </div>
                         </div>
                     </div>
@@ -509,8 +512,9 @@ class App extends React.Component {
                         </div>
                     </div>
 
-                    <div className='brand-bg p-5'>
+                    <div className='custom-bg p-5 text-center'>
                         <h2 className='primary-title primary-title-color'>Deliver Phase</h2>
+                        <div class="titleUnderLineBrand"></div>
                     </div>
                     <div className="container-fluid mb-2">
                         <div className="row m-lg-5 m-xs-2 m-sm-2 mt-3">

@@ -76,8 +76,9 @@ class App extends React.Component {
                         </div>
                     </div>
 
-                    <div className='brand-bg p-5'>
+                    <div className='custom-bg p-5 text-center'>
                         <h2 className='primary-title primary-title-color'>Discover Phase</h2>
+                        <div class="titleUnderLineBrand"></div>
                     </div>
                     <div className="container-fluid mb-2">
                         <div className="row m-lg-5 m-xs-2 m-sm-2 mt-3">
@@ -157,8 +158,9 @@ class App extends React.Component {
                         </div>
                     </div>
 
-                    <div className='brand-bg p-5'>
+                    <div className='custom-bg p-5 text-center'>
                         <h2 className='primary-title primary-title-color'>Define Phase</h2>
+                        <div class="titleUnderLineBrand"></div>
                     </div>
                     <div className="container-fluid mb-2">
                         <div className="row m-lg-5 m-xs-2 m-sm-2 mt-3">
@@ -280,8 +282,9 @@ class App extends React.Component {
                         </div>
                     </Container>
 
-                    <div className='brand-bg mt-5 p-5'>
+                    <div className='custom-bg text-center p-5 mt-5'>
                         <h2 className='primary-title primary-title-color'>Develope Phase</h2>
+                        <div class="titleUnderLineBrand"></div>
                     </div>
                     <div className="container-fluid mb-2">
                         <div className="row m-lg-5 m-xs-2 m-sm-2 mt-3">
@@ -304,8 +307,9 @@ class App extends React.Component {
                         </div>
                     </div>
 
-                    <div className='brand-bg p-5'>
+                    <div className='custom-bg p-5 text-center'>
                         <h2 className='primary-title primary-title-color'>Deliver Phase</h2>
+                        <div class="titleUnderLineBrand"></div>
                     </div>
                     <div className="container-fluid mb-2">
                         <div className="row m-lg-5 m-xs-2 m-sm-2 mt-3">
