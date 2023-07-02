@@ -54,8 +54,8 @@ class App extends React.Component {
                                                 <i className='text-light'><b>- Ali</b></i>
                                             </div>
                                             <div className='mb-3 d-none'>
-                                                <a className="buttonGeneric mb-2 hidden-xxs hidden-xs hidden-sm" href="#team">Contact Me</a>
-                                                <a className="buttonGeneric mb-2 hidden-md hidden-lg hidden-xl hidden-xxl" href="#teammobile">Contact Me</a>
+                                                <a className="btn button-primary mb-2 hidden-xxs hidden-xs hidden-sm" href="#team">Contact Me</a>
+                                                <a className="btn button-primary mb-2 hidden-md hidden-lg hidden-xl hidden-xxl" href="#teammobile">Contact Me</a>
                                             </div>
                                         </div>
                                     </div>
@@ -91,16 +91,16 @@ class App extends React.Component {
                                         </div>
                                         <div className='row'>
                                             <div className='col-md-6 hidden-xxs hidden-xs hidden-sm mb-5'>
-                                                <a className="buttonGeneric" href="#team">Keep In Touch With Me</a>
+                                                <a className="btn button-primary" href="#team">Keep In Touch With Me</a>
                                             </div>
                                             <div className='col-xs-12 col-sm-12 hidden-md hidden-lg hidden-xl hidden-xxl mb-4'>
-                                                <a className="buttonGeneric w-100" href="#teammobile">Keep In Touch With Me</a>
+                                                <a className="btn button-primary w-100" href="#teammobile">Keep In Touch With Me</a>
                                             </div>
                                             <div className='col-md-6 hidden-xxs hidden-xs hidden-sm'>
-                                                <a className="buttonGeneric" href={MyCV}>My CV (PDF)</a>
+                                                <a className="btn button-primary" href={MyCV}>My CV (PDF)</a>
                                             </div>
                                             <div className='col-xs-12 col-sm-12 hidden-md hidden-lg hidden-xl hidden-xxl'>
-                                                <a className="buttonGeneric w-100" href={MyCV}>My CV (PDF)</a>
+                                                <a className="btn button-primary w-100" href={MyCV}>My CV (PDF)</a>
                                             </div>
                                         </div>
 
@@ -280,7 +280,7 @@ class App extends React.Component {
                             <div className='text-center'>
                                 <h6>Imagine this with <b>James Earl Jones</b> Voice</h6>
                                 <h1 className="mb-3">This is on HubSpot</h1>
-                                <a className="buttonGeneric m-2" href="https://cvlanes.online">cvlanes.online</a>
+                                <a className="btn button-primary m-2" href="https://cvlanes.online">cvlanes.online</a>
                             </div>
                         </div>
                         <div className='wow slideInRight col-md-5 col-sm-12 image-col-align pt-5' data-wow-delay="0.2s">
@@ -308,14 +308,14 @@ class App extends React.Component {
                                                 <h4 style={{ marginBottom: '0', lineHeight: '20px' }}>Creative Problem-Solving, Divergent Thinking, Thoughtful Disruption & Exploring New Perspectives</h4>
                                             </div>
                                             <div className="team-social pb-1">
-                                                <a className="buttonIcon" href="https://twitter.com/AliZohairi"><Twitter /></a>
-                                                <a className="buttonIcon" href="https://www.linkedin.com/in/ali-zuhairi/"><LinkedIn /></a>
-                                                <a className="buttonIcon" href="https://www.facebook.com/zuhairi.one"><Facebook /></a>
+                                                <a className="btn button-primary" href="https://twitter.com/AliZohairi"><i class="fa-brands fa-twitter"></i></a>
+                                                <a className="btn button-primary" href="https://www.linkedin.com/in/ali-zuhairi/"><i class="fa-brands fa-linkedin-in"></i></a>
+                                                <a className="btn button-primary" href="https://www.facebook.com/zuhairi.one"><i class="fa-brands fa-facebook-f"></i></a>
                                             </div>
                                             <div className="team-social">
-                                                <a className="buttonIcon" href="https://www.tiktok.com/@zuhairi.ali"><Tiktok /></a>
-                                                <a className="buttonIcon" href="https://www.youtube.com/@Ali.Zuhairi"><Youtube /></a>
-                                                <a className="buttonIcon" href="mailto:zohairi@live.com"><Envelope /></a>
+                                                <a className="btn button-primary" href="https://www.tiktok.com/@zuhairi.ali"><i class="fa-brands fa-tiktok"></i></a>
+                                                <a className="btn button-primary" href="https://www.youtube.com/@Ali.Zuhairi"><i class="fa-brands fa-youtube"></i></a>
+                                                <a className="btn button-primary" href="mailto:zohairi@live.com"><i class="fa-solid fa-envelope"></i></a>
                                             </div>
                                         </div>
                                     </div>
@@ -344,12 +344,12 @@ class App extends React.Component {
                                                 <p style={{ marginBottom: '0', lineHeight: '20px' }}>Creative Problem-Solving, Divergent Thinking, Thoughtful Disruption & Exploring New Perspectives</p>
                                             </div>
                                             <div className="team-social d-block text-center pb-1">
-                                                <a className="buttonIcon" href="https://twitter.com/AliZohairi"><i className="fab fa-twitter"></i></a>
-                                                <a className="buttonIcon" href="https://www.linkedin.com/in/ali-zuhairi/"><i className="fab fa-linkedin-in"></i></a>
-                                                <a className="buttonIcon" href="https://www.facebook.com/zuhairi.one"><i className="fab fa-facebook-f"></i></a>
-                                                <a className="buttonIcon" href="https://www.tiktok.com/@zuhairi.ali"><Tiktok /></a>
-                                                <a className="buttonIcon" href="https://www.youtube.com/@Ali.Zuhairi"><Youtube /></a>
-                                                <a className="buttonIcon" href="mailto:zohairi@live.com"><i className="fa fa-envelope"></i></a>
+                                                <a className="btn button-primary" href="https://twitter.com/AliZohairi"><i className="fab fa-twitter"></i></a>
+                                                <a className="btn button-primary" href="https://www.linkedin.com/in/ali-zuhairi/"><i className="fab fa-linkedin-in"></i></a>
+                                                <a className="btn button-primary" href="https://www.facebook.com/zuhairi.one"><i className="fab fa-facebook-f"></i></a>
+                                                <a className="btn button-primary" href="https://www.tiktok.com/@zuhairi.ali"><Tiktok /></a>
+                                                <a className="btn button-primary" href="https://www.youtube.com/@Ali.Zuhairi"><Youtube /></a>
+                                                <a className="btn button-primary" href="mailto:zohairi@live.com"><i className="fa fa-envelope"></i></a>
                                             </div>
                                         </div>
                                     </div>
