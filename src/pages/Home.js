@@ -21,7 +21,7 @@ class App extends React.Component {
             <div>
 
                 <div className="App overflow-x-hidden">
-                        <TopNav />
+                    <TopNav />
 
                     <div className='hero-bg'>
                         <div className="hero hero-bg-img" id="home">
