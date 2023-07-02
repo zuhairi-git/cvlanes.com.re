@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-
+import {iPhoneNotification} from '../img/blog/iphone-mail-notifications.jpg'
+import {DailyRhythm} from '../img/blog-writing.jpg'
 const BlogPage = ({ id, title, to, image, content }) => {
   const handleClick = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -44,9 +45,9 @@ const BlogList = () => {
       id: 3,
       title: "Embracing the Era of AI",
       to: '/blogs/premitive-human',
-      image: '/img/blog/Human-AI/chess-ai.webp',
+      image: '../img/blog/Human-AI/chess-ai.webp',
       content: 'I have a feeling that with the progress of AI and the advancements in machine learning, our world will reach such a level of sophistication that most humans may appear primitive once more.',
-      hidden: true,
+      hidden: false,
     },
 
   ];

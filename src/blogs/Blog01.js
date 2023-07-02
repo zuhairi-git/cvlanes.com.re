@@ -44,7 +44,7 @@ class App extends React.Component {
                         </p>
                         <div className='text-center mb-5 mt-5'>
                             <div className='bg-image'>
-                                <img className='w-100 image-circle' src='../img/blog-writing.jpg' alt='Image'/>
+                                <img className='w-100 image-circle' src={require('../img/blog-writing.jpg')} alt='Image'/>
                             </div>
                         </div>
                         <h2>Brainstorming</h2>
@@ -71,7 +71,7 @@ class App extends React.Component {
                         </p>
                         <hr className=' m-lg-5 m-xs-3 m-sm-3' />
                         <div className='text-center  m-lg-5 m-xs-3 m-sm-3'>
-                            <img className='w-100' src='../img/circle-daily-rhythm.jpg' alt='Image' />
+                            <img className='w-100' src={require('../img/circle-daily-rhythm.jpg')} alt='Image' />
                         </div>
 
                         <h2 className='primary-title'>Here's a glimpse into my daily routine</h2>

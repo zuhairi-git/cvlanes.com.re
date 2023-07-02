@@ -46,7 +46,7 @@ class App extends React.Component {
                         </p>
                         <div className='text-center mb-5 mt-5'>
                             <div className='bg-image'>
-                                <img className='w-100' src='../img/blog/ios-notifications-personal-focus.png' style={{ maxWidth: '350px', width: '100%' }} alt='Image' />
+                                <img className='w-100' src={require('../img/blog/ios-notifications-personal-focus.png')} style={{ maxWidth: '350px', width: '100%' }} alt='Image' />
                             </div>
                         </div>
                         <p className='mb-4'>
