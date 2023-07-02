@@ -1,9 +1,10 @@
 import React from 'react';
 import TopNavGeneric from './TopNavGeneric';
 import Footer from './Footer';
-import { Container, Row, Col, Card, Button } from 'react-bootstrap';
+import { Container, Row, Col } from 'react-bootstrap';
+import PortfolioList from './PortfolioList';
 
-const Portfolio = () => {
+const PortfolioPage = () => {
     return (
 
         <div className='portfolio-bg'>
@@ -28,68 +29,11 @@ const Portfolio = () => {
                         <h1 className="text-center my-5 primary-title display-2">My Portfolio</h1>
                     </Col>
                 </Row>
-                <Row>
-                <Col md={4} className='mb-5'>
-                        <Card className='border bordered-1'>
-                            <Card.Img className='card-hero-top' variant="top" src={require("../img/jobseeking-cover.jpeg")} />
-                           <Card.Body className='card-content'>
-                                <Card.Title>Job Seeking</Card.Title>
-                                <Card.Text>
-                                    <p>Final Touches</p>
-                                    <p>User journey and behavior analytics. User actions, awareness, consideration, loyalty, feelings, opportunities, and pain points. </p>
-                                </Card.Text>
-                                <Button href="/portfolio/jobseeking" variant="primary">Read more</Button>
-                            </Card.Body>
-                        </Card>
-                    </Col>
-
-                    <Col md={4} className='mb-5'>
-                        <Card className='border bordered-1'>
-                            <Card.Img className='card-hero-top' variant="top" src={require("../img/collaboration/cwp.png")} />
-                           <Card.Body className='card-content'>
-                                <Card.Title>Collaboration Workflow Platform</Card.Title>
-                                <Card.Text>
-                                    <p>Inprogress</p>
-                                    <p>Enabling a smooth and effective system for real-time collaboration on documents.</p>
-                                </Card.Text>
-                                <Button href="/portfolio/collaboration" variant="primary">Read more</Button>
-                            </Card.Body>
-                        </Card>
-                    </Col>
-
-                    <Col md={4} className='mb-5'>
-                        <Card className='border bordered-1'>
-                            <Card.Img className='card-hero-top' variant="top" src={require("../img/smart-shopping/smart-shopping-cover.jpg")} />
-                           <Card.Body className='card-content'>
-                                <Card.Title>Smart Shopping</Card.Title>
-                                <Card.Text>
-                                    <p>Next</p>
-                                    <p>Why not take pleasure when there is an opportunity?</p>
-                                </Card.Text>
-                                <Button href="#" variant="primary" disabled>Read more</Button>
-                            </Card.Body>
-                        </Card>
-                    </Col>
-
-                    <Col md={4} className='mb-5'>
-                        <Card className='border bordered-1'>
-                            <Card.Img className='card-hero-top' variant="top" src={require("../img/smart-banking/hassle-free-banking.jpg")} />
-                           <Card.Body className='card-content'>
-                                <Card.Title>Smart Banking</Card.Title>
-                                <Card.Text>
-                                    <p>After Next</p>
-                                    <p>Hassle free banking application. It's time to get productive.</p>
-                                </Card.Text>
-                                <Button href="#" variant="primary" disabled>Read more</Button>
-                            </Card.Body>
-                        </Card>
-                    </Col>
-
-                </Row>
+                <PortfolioList />
             </Container>
             <Footer />
 
         </div>
     );
 };
-export default Portfolio;
+export default PortfolioPage;

@@ -61,7 +61,7 @@ function App() {
                 <meta name="description" content="Job Seeking Application" />
                 <meta name="type" content="blog" />
                 <meta name="url" content="https://cvlanes.com/portfolio/jobseeking" />
-                <meta property="og:image" content='https://cvlanes.com/img/jobseeking-cover.jpeg' />
+                <meta property="og:image" content='https://cvlanes.com/img/jobseeking/jobseeking-cover.jpeg' />
                 <meta property="og:image:width" content='1200' />
                 <meta property="og:image:height" content='630' />
                 <meta name="image:alt" content="Job Seeking Application" />
@@ -77,7 +77,7 @@ function App() {
                 <meta name="description" content="Collaboration Workflow Platform" />
                 <meta name="type" content="blog" />
                 <meta name="url" content="https://cvlanes.com/portfolio/collaboration" />
-                <meta property="og:image" content='https://cvlanes.com/img/jobseeking-cover.jpeg' />
+                <meta property="og:image" content='https://cvlanes.com/img/jobseeking/jobseeking-cover.jpeg' />
                 <meta property="og:image:width" content='1200' />
                 <meta property="og:image:height" content='630' />
                 <meta name="image:alt" content="Collaboration Workflow Platform" />
