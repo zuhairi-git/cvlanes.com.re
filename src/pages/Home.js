@@ -343,13 +343,13 @@ class App extends React.Component {
                                                 <h2>Ali Zuhairi</h2>
                                                 <p style={{ marginBottom: '0', lineHeight: '20px' }}>Creative Problem-Solving, Divergent Thinking, Thoughtful Disruption & Exploring New Perspectives</p>
                                             </div>
-                                            <div className="team-social d-block text-center pb-1">
-                                                <a className="btn button-primary" href="https://twitter.com/AliZohairi"><i className="fab fa-twitter"></i></a>
-                                                <a className="btn button-primary" href="https://www.linkedin.com/in/ali-zuhairi/"><i className="fab fa-linkedin-in"></i></a>
-                                                <a className="btn button-primary" href="https://www.facebook.com/zuhairi.one"><i className="fab fa-facebook-f"></i></a>
-                                                <a className="btn button-primary" href="https://www.tiktok.com/@zuhairi.ali"><Tiktok /></a>
-                                                <a className="btn button-primary" href="https://www.youtube.com/@Ali.Zuhairi"><Youtube /></a>
-                                                <a className="btn button-primary" href="mailto:zohairi@live.com"><i className="fa fa-envelope"></i></a>
+                                            <div className="team-social text-center d-flex pb-1">
+                                                <a className="btn button-primary buttonIconBrands" href="https://twitter.com/AliZohairi"><i className="fab fa-twitter"></i></a>
+                                                <a className="btn button-primary buttonIconBrands" href="https://www.linkedin.com/in/ali-zuhairi/"><i className="fab fa-linkedin-in"></i></a>
+                                                <a className="btn button-primary buttonIconBrands" href="https://www.facebook.com/zuhairi.one"><i className="fab fa-facebook-f"></i></a>
+                                                <a className="btn button-primary buttonIconBrands" href="https://www.tiktok.com/@zuhairi.ali"><i class="fa-brands fa-tiktok"></i></a>
+                                                <a className="btn button-primary buttonIconBrands" href="https://www.youtube.com/@Ali.Zuhairi"><i class="fa-brands fa-youtube"></i></a>
+                                                <a className="btn button-primary buttonIconBrands" href="mailto:zohairi@live.com"><i className="fa fa-envelope"></i></a>
                                             </div>
                                         </div>
                                     </div>

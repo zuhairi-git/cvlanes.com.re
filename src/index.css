@@ -78,6 +78,13 @@ div {
 
 }
 
+.buttonIconBrands {
+    min-width: 42px;
+    min-height: 42px;
+    padding: 6px 7px;
+    margin: 0.5em;
+}
+
 .buttonIcon {
     min-width: 42px;
     min-height: 42px;
