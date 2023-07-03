@@ -7,7 +7,8 @@ import TopNav from '../pages/TopNav';
 import BackToTopButton from '../generic/BackToTopButton';
 import Footer from '../pages/Footer'
 import FormatQuoteIcon from '@mui/icons-material/FormatQuote';
-import Skillset from './Skillset';
+import WorkSkillset from './WorkSkillset';
+import WorkExperience from './WorkExperience';
 
 class App extends React.Component {
     componentDidMount() {
@@ -102,76 +103,13 @@ class App extends React.Component {
 
                                 </div>
                             </div>
-                            <Skillset />
+                            <WorkSkillset />
 
                         </div>
                     </div>
                 </div>
 
-                <div className="experience" id="experience">
-                    <div className="container">
-                        <header className="section-header text-center wow zoomIn" data-wow-delay="0.1s">
-                            <p className='sectionSeparator'>My Resume</p>
-                            <h2>Working Experience</h2>
-                        </header>
-                        <div className="timeline">
-                            <div className="timeline-item left wow slideInLeft" data-wow-delay="0.1s">
-                                <div className="timeline-text text-start">
-                                    <div className="timeline-date">2017 - Present</div>
-                                    <h2>Professional Product Designer</h2>
-                                    <h4>Reslink, Espoo, Finland</h4>
-                                    <p>
-                                        Workflow and Cloud Management, WebApp (SaaS), and Mobile.<br /> @Reslink Solutions.
-                                    </p>
-                                </div>
-                            </div>
-                            <div className="timeline-item right wow slideInRight" data-wow-delay="0.1s">
-                                <div className="timeline-text text-start">
-                                    <div className="timeline-date">2016 - Present</div>
-                                    <h2>Senior UI/UX Designer</h2>
-                                    <h4>Reslink, Helsinki, Finland</h4>
-                                    <p>
-                                        Web Application UI/UX and Android UI Development
-                                    </p>
-                                </div>
-                            </div>
-                            <div className="timeline-item left wow slideInLeft" data-wow-delay="0.1s">
-                                <div className="timeline-text text-start">
-                                    <div className="timeline-date">2014 - 2016</div>
-                                    <h2>Graphic Designer UI/UX</h2>
-                                    <h4>Reslink, Helsinki, Finland</h4>
-                                    <p>
-                                        Graphic and Website Designer, Android and iOS Graphics and Prototype.
-                                    </p>
-                                </div>
-                            </div>
-                            <div className="timeline-item right wow slideInRight" data-wow-delay="0.1s">
-                                <div className="timeline-text text-start">
-                                    <div className="timeline-date">2000 - 2014</div>
-                                    <h2>Freelance Web and Mobile UI Designer</h2>
-                                    <h4>From Damascus to Espoo</h4>
-                                    <p>
-                                        Website and Android Developer.
-                                    </p>
-                                </div>
-                            </div>
-                            <div className="timeline-item left wow slideInLeft" data-wow-delay="0.1s">
-                                <div className="timeline-text text-start">
-                                    <div className="timeline-date">Long time a go</div>
-                                    <h2>Graphic Designer and Publisher</h2>
-                                    <h4>Various Magazines and Newspapers — Tehran, Iran</h4>
-                                </div>
-                            </div>
-                            <div className="timeline-item right wow slideInRight" data-wow-delay="0.1s">
-                                <div className="timeline-text text-start">
-                                    <div className="timeline-date">Once upon a time</div>
-                                    <h2>Junior Publisher - Junior IT Expert</h2>
-                                    <h4>Study and Work</h4>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <WorkExperience />
 
                 <div className='separator'></div>
                 <div className='custom-bg'>

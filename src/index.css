@@ -1198,10 +1198,6 @@ a:focus {
     padding: 0px 60px;
 }
 
-.about .about-text p {
-    font-size: 16px;
-}
-
 .about .skills {
     margin-bottom: 30px;
 }
@@ -1213,8 +1209,9 @@ a:focus {
 .about .skill-name p {
     display: inline-block;
     margin-bottom: 5px;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 400;
+    color: #797979;
 }
 
 .about .skill-name p:last-child {
