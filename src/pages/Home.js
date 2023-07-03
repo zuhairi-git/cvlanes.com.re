@@ -9,6 +9,7 @@ import Footer from '../pages/Footer'
 import FormatQuoteIcon from '@mui/icons-material/FormatQuote';
 import WorkSkillset from './WorkSkillset';
 import WorkExperience from './WorkExperience';
+import WorkAchievements from './WorkAchievements';
 
 class App extends React.Component {
     componentDidMount() {
@@ -119,38 +120,7 @@ class App extends React.Component {
                         </svg>
                     </div>
 
-                    <div className="wow fadeIn pt-5" id="achievements" data-wow-delay="0.3s">
-                        <header className="section-header-custom-bg text-center wow zoomIn pt-3" data-wow-delay="0.1s">
-                            <p className='sectionSeparator'>My Achievements</p>
-                            <h2>To do or not to do</h2>
-                        </header>
-                        <div className="row m-3 justify-content-md-center pb-5">
-                            <div className="col-md-5 col-sm-12 wow fadeIn" data-wow-delay="0.3s">
-                                <h3 className="text-start">Ongoing</h3>
-                                <ul className="">
-                                    <li className="text-start">Prototyping the new Android UI and UX based on Google practices (Material UI 3) to stay competitive in the market.</li>
-                                    <li className="text-start">Developing the new Android UI with Android Studio.</li>
-                                    <li className="text-start">Taking the lead on developing and introducing a new UI framework for the backend(Modular SaaS) next version and modernizing the UI and UX and improving the security.</li>
-                                    <li className="text-start">And adding to my skills, I started to create a Testing framework in Jira to improve and fix the bugs in the new and the next version using best practices. It will save time for future testing and it could be also used as documentation for future references.</li>
-                                    <li className="text-start">Creating a variety of Workflow for different applications (Web, Mobile, and eCommerce).</li>
-                                </ul>
-                            </div>
-                            <div className="col-md-5 col-sm-12 wow fadeIn" data-wow-delay="0.3s">
-                                <h3 className="text-start">Done</h3>
-                                <ul className="">
-                                    <li className="text-start">Taking the lead on designing the UI for the backend(Modular SaaS) legacy versions.</li>
-                                    <li className="text-start">Developing UI and UX frameworks for all company's platforms.</li>
-                                    <li className="text-start">Taking the lead on developing the backend(Modular SaaS) new version and delivering a platform the company uses today.</li>
-                                    <li className="text-start">Meeting goals by designing and developing 3 eCommerce platforms for the company and our B2B2C customers + Linux server setup (LAMP).</li>
-                                    <li className="text-start">Meeting goals by designing and developing 3 company websites + Linux server setup (LAMP).</li>
-                                    <li className="text-start">Create and develop the blog in HubSpot and participate in sales and marketing.</li>
-                                    <li className="text-start">Participating in creating documentation.</li>
-                                    <li className="text-start">Significantly improve Android UI, UX, and refactoring code.</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
+                    <WorkAchievements />
                     <div class="custom-shape-divider-bottom-1688374069">
                         <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
                             <path d="M1200 0L0 0 892.25 114.72 1200 0z" class="shape-fill"></path>
