@@ -241,13 +241,19 @@ class App extends React.Component {
                     </div>
 
                     <div className='separator'></div>
-                    <div className='custom-bg pt-5 pb-5'>
-                        <div className="wow fadeIn" id="achievements" data-wow-delay="0.3s">
-                            <header className="section-header-custom-bg text-center wow zoomIn" data-wow-delay="0.1s">
+                    <div className='custom-bg'>
+                        <div class="custom-shape-divider-top-1688373964">
+                            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                                <path d="M1200 0L0 0 892.25 114.72 1200 0z" class="shape-fill"></path>
+                            </svg>
+                        </div>
+
+                        <div className="wow fadeIn pt-5" id="achievements" data-wow-delay="0.3s">
+                            <header className="section-header-custom-bg text-center wow zoomIn pt-3" data-wow-delay="0.1s">
                                 <p className='sectionSeparator'>My Achievements</p>
                                 <h2>To do or not to do</h2>
                             </header>
-                            <div className="row m-3 justify-content-md-center mb-5">
+                            <div className="row m-3 justify-content-md-center pb-5">
                                 <div className="col-md-5 col-sm-12 wow fadeIn" data-wow-delay="0.3s">
                                     <h3 className="text-start">Ongoing</h3>
                                     <ul className="">
@@ -273,8 +279,13 @@ class App extends React.Component {
                                 </div>
                             </div>
                         </div>
+
+                        <div class="custom-shape-divider-bottom-1688374069">
+                            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                                <path d="M1200 0L0 0 892.25 114.72 1200 0z" class="shape-fill"></path>
+                            </svg>
+                        </div>
                     </div>
-                    <div className='separator mt-5'></div>
 
                     <div className="team mb-5 mt-5 hidden-xxs hidden-xs hidden-sm" id="team">
                         <div className="container">
