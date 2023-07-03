@@ -22,7 +22,6 @@ function ResponsiveNavbar() {
             <Nav.Link href="#review">Recommendations</Nav.Link>
             <DropDown />
             <Nav.Link href="/blog">Blog</Nav.Link>
-            <Nav.Link href="#footer">Contact</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

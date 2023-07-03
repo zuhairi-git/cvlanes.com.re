@@ -242,13 +242,13 @@ class App extends React.Component {
 
                     <div className='separator'></div>
 
-                    <div className="wow zoomIn" id="achievements" data-wow-delay="0.1s">
+                    <div className="wow fadeIn" id="achievements" data-wow-delay="0.3s">
                         <header className="section-header text-center wow zoomIn" data-wow-delay="0.1s">
                             <p className='sectionSeparator'>My Achievements</p>
                             <h2>To do or not to do</h2>
                         </header>
                         <div className="row m-3 justify-content-md-center mb-5">
-                            <div className="col-md-5 col-sm-12 wow slideInLeft">
+                            <div className="col-md-5 col-sm-12 wow fadeIn" data-wow-delay="0.3s">
                                 <h3 className="text-start">Ongoing</h3>
                                 <ul className="">
                                     <li className="text-start">Prototyping the new Android UI and UX based on Google practices (Material UI 3) to stay competitive in the market.</li>
@@ -258,7 +258,7 @@ class App extends React.Component {
                                     <li className="text-start">Creating a variety of Workflow for different applications (Web, Mobile, and eCommerce).</li>
                                 </ul>
                             </div>
-                            <div className="col-md-5 col-sm-12 wow slideInRight">
+                            <div className="col-md-5 col-sm-12 wow fadeIn" data-wow-delay="0.3s">
                                 <h3 className="text-start">Done</h3>
                                 <ul className="">
                                     <li className="text-start">Taking the lead on designing the UI for the backend(Modular SaaS) legacy versions.</li>
@@ -359,7 +359,7 @@ class App extends React.Component {
 
                     <div className='separator'></div>
 
-                    <div className="review wow fadeInUp mt-5" data-wow-delay="0.1s" id="review">
+                    <div className="review mt-5" data-wow-delay="0.1s" id="review">
                         <div className="container">
                             <div className="section-header text-center wow zoomIn" data-wow-delay="0.1s">
                                 <p className='sectionSeparator'>Thank You for the</p>
@@ -369,33 +369,32 @@ class App extends React.Component {
                             <div className="review-icon">
                                 <i className="fa fa-quote-left"></i>
                             </div>
-                            <div className="reviews-carousel row">
-                                <div className="col-md-6 col-xs-12 wow slideInLeft" data-wow-delay="0.3s">
-                                    <div className="review-item">
-                                        <div className="review-img">
-                                            <img src={require("../img/review-2.jpg")} alt="Buda" />
-                                        </div>
-                                        <div className="review-text">
-                                            <p className='text-start'>
-                                                Ali is an exceptional and experienced UI/UX designer with more than ten years of professional experience specialising in product design for technology companies. Ali believes that design is not about deliverables and beautiful pixels but about solving problems and achieving business and user goals. As a product designer, Ali focuses on usability, user experience, and user research in his designs. He has worked with small and large teams as well as a freelancer and enjoys the challenge of solving user problems. He always delivers on time and on budget.</p>
+                            <div className="reviews-carousel row d-flex">
+                                <div className="col-md-12 col-xs-12 wow fadeIn flex-fill mb-4" data-wow-delay="0.3s">
+                                    <div className="review-image-square">
+                                        <img className='image-square' src={require("../img/review-2.jpg")} alt="Buda" />
+                                    </div>
+                                    <div className="review-item flex-fill">
+                                        <div className="review-text custom-bg">
+                                            <div className='text-start mb-3'>
+                                                Ali is an exceptional and experienced UI/UX designer with more than ten years of professional experience specialising in product design for technology companies. Ali believes that design is not about deliverables and beautiful pixels but about solving problems and achieving business and user goals. As a product designer, Ali focuses on usability, user experience, and user research in his designs. He has worked with small and large teams as well as a freelancer and enjoys the challenge of solving user problems. He always delivers on time and on budget.
+                                            </div>
                                             <h3>Constantin Buda</h3>
-                                            <h4>CMO at Vidalico Digital</h4>
-                                            <h4>Hubspot Agency Partner</h4>
-                                            <h4>SicTic Member</h4>
+                                            <div>CMO at Vidalico Digital | Hubspot Agency Partner | SicTic Member</div>
                                         </div>
                                     </div>
                                 </div>
-                                <div className="col-md-6 col-xs-12 wow slideInRight" data-wow-delay="0.3s">
-                                    <div className="review-item">
-                                        <div className="review-img">
-                                            <img src={require("../img/review-1.jpg")} alt="M" />
-                                        </div>
-                                        <div className="review-text">
-                                            <p className='text-start'>
-                                                Ali is a creative product designer. You will find a lot of artists with too busy layouts and art forms. But Ali takes a lead in impressive yet simple and relevant product designs. He has this cunning ability to solve complex problem with simple solutions using his design skills. His arts speaks visually, does the job perfectly and leaves a long lasting impression. I've worked with Ali in past and it was truly a fun experience. Would love to do that again and I highly recommend Ali too.</p>
+                                <div className="col-md-12 col-xs-12 wow fadeIn flex-fill mb-4" data-wow-delay="0.4s">
+                                    <div className="review-image-square">
+                                        <img className='image-square' src={require("../img/review-1.jpg")} alt="M" />
+                                    </div>
+                                    <div className="review-item flex-fill">
+                                        <div className="review-text custom-bg">
+                                            <div className='text-start mb-3'>
+                                                Ali is a creative product designer. You will find a lot of artists with too busy layouts and art forms. But Ali takes a lead in impressive yet simple and relevant product designs. He has this cunning ability to solve complex problem with simple solutions using his design skills. His arts speaks visually, does the job perfectly and leaves a long lasting impression. I've worked with Ali in past and it was truly a fun experience. Would love to do that again and I highly recommend Ali too.
+                                            </div>
                                             <h3>Fahad M</h3>
-                                            <h4>IT Contractor</h4>
-                                            <h4>Travelodge Hotels Limited</h4>
+                                            <div>IT Contractor | Travelodge Hotels Limited</div>
                                         </div>
                                     </div>
                                 </div>
