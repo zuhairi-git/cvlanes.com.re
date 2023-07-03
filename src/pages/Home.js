@@ -241,51 +241,37 @@ class App extends React.Component {
                     </div>
 
                     <div className='separator'></div>
-
-                    <div className="wow fadeIn" id="achievements" data-wow-delay="0.3s">
-                        <header className="section-header text-center wow zoomIn" data-wow-delay="0.1s">
-                            <p className='sectionSeparator'>My Achievements</p>
-                            <h2>To do or not to do</h2>
-                        </header>
-                        <div className="row m-3 justify-content-md-center mb-5">
-                            <div className="col-md-5 col-sm-12 wow fadeIn" data-wow-delay="0.3s">
-                                <h3 className="text-start">Ongoing</h3>
-                                <ul className="">
-                                    <li className="text-start">Prototyping the new Android UI and UX based on Google practices (Material UI 3) to stay competitive in the market.</li>
-                                    <li className="text-start">Developing the new Android UI with Android Studio.</li>
-                                    <li className="text-start">Taking the lead on developing and introducing a new UI framework for the backend(Modular SaaS) next version and modernizing the UI and UX and improving the security.</li>
-                                    <li className="text-start">And adding to my skills, I started to create a Testing framework in Jira to improve and fix the bugs in the new and the next version using best practices. It will save time for future testing and it could be also used as documentation for future references.</li>
-                                    <li className="text-start">Creating a variety of Workflow for different applications (Web, Mobile, and eCommerce).</li>
-                                </ul>
+                    <div className='custom-bg pt-5 pb-5'>
+                        <div className="wow fadeIn" id="achievements" data-wow-delay="0.3s">
+                            <header className="section-header-custom-bg text-center wow zoomIn" data-wow-delay="0.1s">
+                                <p className='sectionSeparator'>My Achievements</p>
+                                <h2>To do or not to do</h2>
+                            </header>
+                            <div className="row m-3 justify-content-md-center mb-5">
+                                <div className="col-md-5 col-sm-12 wow fadeIn" data-wow-delay="0.3s">
+                                    <h3 className="text-start">Ongoing</h3>
+                                    <ul className="">
+                                        <li className="text-start">Prototyping the new Android UI and UX based on Google practices (Material UI 3) to stay competitive in the market.</li>
+                                        <li className="text-start">Developing the new Android UI with Android Studio.</li>
+                                        <li className="text-start">Taking the lead on developing and introducing a new UI framework for the backend(Modular SaaS) next version and modernizing the UI and UX and improving the security.</li>
+                                        <li className="text-start">And adding to my skills, I started to create a Testing framework in Jira to improve and fix the bugs in the new and the next version using best practices. It will save time for future testing and it could be also used as documentation for future references.</li>
+                                        <li className="text-start">Creating a variety of Workflow for different applications (Web, Mobile, and eCommerce).</li>
+                                    </ul>
+                                </div>
+                                <div className="col-md-5 col-sm-12 wow fadeIn" data-wow-delay="0.3s">
+                                    <h3 className="text-start">Done</h3>
+                                    <ul className="">
+                                        <li className="text-start">Taking the lead on designing the UI for the backend(Modular SaaS) legacy versions.</li>
+                                        <li className="text-start">Developing UI and UX frameworks for all company's platforms.</li>
+                                        <li className="text-start">Taking the lead on developing the backend(Modular SaaS) new version and delivering a platform the company uses today.</li>
+                                        <li className="text-start">Meeting goals by designing and developing 3 eCommerce platforms for the company and our B2B2C customers + Linux server setup (LAMP).</li>
+                                        <li className="text-start">Meeting goals by designing and developing 3 company websites + Linux server setup (LAMP).</li>
+                                        <li className="text-start">Create and develop the blog in HubSpot and participate in sales and marketing.</li>
+                                        <li className="text-start">Participating in creating documentation.</li>
+                                        <li className="text-start">Significantly improve Android UI, UX, and refactoring code.</li>
+                                    </ul>
+                                </div>
                             </div>
-                            <div className="col-md-5 col-sm-12 wow fadeIn" data-wow-delay="0.3s">
-                                <h3 className="text-start">Done</h3>
-                                <ul className="">
-                                    <li className="text-start">Taking the lead on designing the UI for the backend(Modular SaaS) legacy versions.</li>
-                                    <li className="text-start">Developing UI and UX frameworks for all company's platforms.</li>
-                                    <li className="text-start">Taking the lead on developing the backend(Modular SaaS) new version and delivering a platform the company uses today.</li>
-                                    <li className="text-start">Meeting goals by designing and developing 3 eCommerce platforms for the company and our B2B2C customers + Linux server setup (LAMP).</li>
-                                    <li className="text-start">Meeting goals by designing and developing 3 company websites + Linux server setup (LAMP).</li>
-                                    <li className="text-start">Create and develop the blog in HubSpot and participate in sales and marketing.</li>
-                                    <li className="text-start">Participating in creating documentation.</li>
-                                    <li className="text-start">Significantly improve Android UI, UX, and refactoring code.</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className='separator mt-5'></div>
-                    <div className='row m-3 justify-content-md-center mb-5 wow zoomIn brand-bg-light' data-wow-delay="0.1s">
-                        <div className='wow slideInLeft col-md-5 col-sm-12 text-end align-self-center mt-5' data-wow-delay="0.2s">
-                            <div className='text-center'>
-                                <h6>Imagine this with <b>James Earl Jones</b> Voice</h6>
-                                <h1 className="mb-3">This is on HubSpot</h1>
-                                <a className="btn button-primary m-2" href="https://cvlanes.online">cvlanes.online</a>
-                            </div>
-                        </div>
-                        <div className='wow slideInRight col-md-5 col-sm-12 image-col-align pt-5' data-wow-delay="0.2s">
-                            <img src={require("../img/dw.png")} alt='DW' className='image-col' />
-
                         </div>
                     </div>
                     <div className='separator mt-5'></div>

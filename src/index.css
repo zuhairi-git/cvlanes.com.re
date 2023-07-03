@@ -346,7 +346,9 @@ div .card-content {
 }
 
 .custom-bg {
-    background-color: #def3f6;
+    position: relative;
+    background-color: #def3f6 !important;
+    z-index: -10;
 }
 
 .brand-text {
@@ -1103,6 +1105,42 @@ a:focus {
 }
 
 .section-header p::after {
+    position: absolute;
+    content: "";
+    width: 3px;
+    height: 3px;
+    top: 11px;
+    left: 3px;
+    background: #1EB6C3;
+    z-index: 1;
+}
+
+
+.section-header-custom-bg p {
+    display: inline-block;
+    margin: 0 30px;
+    margin-bottom: 10px;
+    padding-left: 15px;
+    position: relative;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    background: #def3f6;
+}
+
+.section-header-custom-bg p::before {
+    position: absolute;
+    content: "";
+    height: 3px;
+    top: 11px;
+    right: 0;
+    left: -30px;
+    background: #1EB6C3;
+    z-index: -1;
+}
+
+.section-header-custom-bg p::after {
     position: absolute;
     content: "";
     width: 3px;
