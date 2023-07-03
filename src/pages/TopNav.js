@@ -20,8 +20,8 @@ function ResponsiveNavbar() {
             <Nav.Link href="#team" className='hidden-xxs hidden-xs hidden-sm'>Social Media</Nav.Link>
             <Nav.Link href="#teammobile" className='hidden-md hidden-lg hidden-xl hidden-xxl'>Social Media</Nav.Link>
             <Nav.Link href="#review">Recommendations</Nav.Link>
-            <DropDown />
             <Nav.Link href="/blog">Blog</Nav.Link>
+            <DropDown />
           </Nav>
         </Navbar.Collapse>
       </Container>
