@@ -151,7 +151,7 @@ class App extends React.Component {
                             Final Conclusion
                         </h4>
                         <p>
-                            Text...
+                            In conclusion, for engaging in this game, it is imperative to establish clear and simplified rules that can be easily understood by all participants. Instead of complex and often ignored rules akin to a book of law, we should adopt straightforward guidelines. Achieving a common understanding of what AI is, its significance, and the purpose of implementing ground rules for its use is essential. These rules should be designed to enhance our lives, considering the impact of AI on both technical and non-technical individuals. By doing so, we can foster a conducive environment for AI's responsible and beneficial integration into our society.
                         </p>
 
                         <h4>
