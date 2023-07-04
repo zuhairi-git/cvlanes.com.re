@@ -67,7 +67,7 @@ class App extends React.Component {
                     </div>
                 </div>
 
-                <div className="about wow fadeInUp" data-wow-delay="0.1s" id="about">
+                <div className="about wow fadeIn" data-wow-delay="0.1s" id="about">
                     <div className="container-fluid">
                         <div className="row">
                             <div className="col-lg-6 mt-5">
@@ -192,7 +192,8 @@ class App extends React.Component {
                                     </div>
                                 </div>
                             </div>
-                        </div></div>
+                        </div>
+                    </div>
                 </div>
 
                 <div className='separator'></div>
@@ -210,7 +211,7 @@ class App extends React.Component {
                         <div className="reviews-carousel row d-flex">
                             <div className="col-md-12 col-xs-12 wow fadeIn flex-fill mb-4" data-wow-delay="0.3s">
                                 <div className="review-image-square">
-                                <img className='image-square bg-info' src={require("../img/review-constantine.png")} alt="Buda" />
+                                    <img className='image-square bg-info' src={require("../img/review-constantine.png")} alt="Buda" />
                                 </div>
                                 <div className="review-item flex-fill">
                                     <div className="review-text custom-bg">
