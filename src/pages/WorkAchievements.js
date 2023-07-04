@@ -38,7 +38,7 @@ const achievementsData = [
     image: require('../img/pexels-4.jpg'),
   },
   {
-    text: 'Created a Testing framework in Jira to improve bug fixing and future testing.',
+    text: 'Created a Testing framework in Jira to improve bug fixing and feature testing.',
     image: require('../img/pexels-4.jpg'),
   },
   {
