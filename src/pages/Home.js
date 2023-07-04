@@ -210,7 +210,7 @@ class App extends React.Component {
                         <div className="reviews-carousel row d-flex">
                             <div className="col-md-12 col-xs-12 wow fadeIn flex-fill mb-4" data-wow-delay="0.3s">
                                 <div className="review-image-square">
-                                    <img className='image-square' src={require("../img/review-2.jpg")} alt="Buda" />
+                                <img className='image-square bg-info' src={require("../img/review-constantine.png")} alt="Buda" />
                                 </div>
                                 <div className="review-item flex-fill">
                                     <div className="review-text custom-bg">
@@ -224,7 +224,7 @@ class App extends React.Component {
                             </div>
                             <div className="col-md-12 col-xs-12 wow fadeIn flex-fill mb-4" data-wow-delay="0.4s">
                                 <div className="review-image-square">
-                                    <img className='image-square' src={require("../img/review-1.jpg")} alt="M" />
+                                    <img className='image-square bg-info' src={require("../img/review-fahad.png")} alt="M" />
                                 </div>
                                 <div className="review-item flex-fill">
                                     <div className="review-text custom-bg">
