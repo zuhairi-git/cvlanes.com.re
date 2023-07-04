@@ -50,7 +50,7 @@ const Experience = () => {
         <div className="timeline">
           {experiences.map((experience, index) => (
             <div
-              className={`timeline-item ${index % 2 === 0 ? 'left' : 'right'} wow slideIn${index % 2 === 0 ? 'Left' : 'Right'
+              className={`timeline-item ${index % 2 === 0 ? 'left' : 'right'} wow zoomIn${index % 2 === 0 ? 'Left' : 'Right'
                 }`}
               data-wow-delay={`${0.1 + index * 0.1}s`}
               key={index}
