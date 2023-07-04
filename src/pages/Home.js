@@ -89,10 +89,10 @@ class App extends React.Component {
                                     </div>
                                     <div className='row'>
                                         <div className='col-md-6 hidden-xxs hidden-xs hidden-sm mb-5'>
-                                            <a className="btn button-primary" href="#team">Keep In Touch</a>
+                                            <a className="btn button-primary" href="#team">Get In Touch</a>
                                         </div>
                                         <div className='col-xs-12 col-sm-12 hidden-md hidden-lg hidden-xl hidden-xxl mb-4'>
-                                            <a className="btn button-primary w-100" href="#teammobile">Keep In Touch</a>
+                                            <a className="btn button-primary w-100" href="#teammobile">Get In Touch</a>
                                         </div>
                                         <div className='col-md-6 hidden-xxs hidden-xs hidden-sm'>
                                             <a className="btn button-primary" href={MyCV}>My CV (PDF)</a>
