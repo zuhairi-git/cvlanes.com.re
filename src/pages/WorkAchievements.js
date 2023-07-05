@@ -32,13 +32,13 @@ const achievementsData = [
     image: require('../img/pexels-4.jpg'),
   },
   {
-    title: 'Websites',
-    text: 'Designed and developed 3 company websites with Linux server setup (LAMP).',
+    title: 'Design System',
+    text: 'Prototyped the new Android UI and UX based on Googles Design System MUI 3.',
     image: require('../img/pexels-4.jpg'),
   },
   {
-    title: 'Design System',
-    text: 'Prototyped the new Android UI and UX based on Googles Design System MUI 3.',
+    title: 'Websites',
+    text: 'Designed and developed 3 company websites with Linux server setup (LAMP).',
     image: require('../img/pexels-4.jpg'),
   },
   {
