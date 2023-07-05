@@ -2,46 +2,52 @@ import React from 'react';
 
 const achievementsData = [
   {
+    title: 'Research (SaaS)',
     text: 'Led Research and UI design for the backend (Modular SaaS).',
     image: require('../img/pexels-4.jpg'),
   },
   {
+    title: 'UI/UX',
     text: 'Developed UI and UX frameworks for all company platforms.',
     image: require('../img/pexels-4.jpg'),
   },
   {
+    title: 'B2B2C eCommerce',
     text: 'Designed and developed 3 eCommerce platforms for B2B2C customers on Linux server.',
     image: require('../img/pexels-4.jpg'),
   },
   {
+    title: 'CRM/CMS',
     text: 'Created and managed the blog in HubSpot, contributing to sales and marketing efforts.',
     image: require('../img/pexels-4.jpg'),
   },
   {
-    text: 'Participated in creating projects and feature documentation.',
+    title: 'Documentation',
+    text: 'Engaged actively in the creation of projects and feature documentation.',
     image: require('../img/pexels-4.jpg'),
   },
   {
-    text: 'Significantly improved Android UI, UX, and refactored code.',
+    title: 'Prototype',
+    text: "Revamped the Mobile Application's UI and UX to deliver a notably enhanced user experience.",
     image: require('../img/pexels-4.jpg'),
   },
   {
+    title: 'Websites',
     text: 'Designed and developed 3 company websites with Linux server setup (LAMP).',
     image: require('../img/pexels-4.jpg'),
   },
   {
+    title: 'Design System',
     text: 'Prototyped the new Android UI and UX based on Googles Design System MUI 3.',
     image: require('../img/pexels-4.jpg'),
   },
   {
-    text: 'Developed the new Android UI using Android Studio.',
-    image: require('../img/pexels-4.jpg'),
-  },
-  {
+    title: 'Testing',
     text: 'Created a Testing framework in Jira to improve bug fixing and feature testing.',
     image: require('../img/pexels-4.jpg'),
   },
   {
+    title: 'Workflow',
     text: 'Implemented various Workflows for different applications (Web, Mobile, and eCommerce).',
     image: require('../img/pexels-4.jpg'),
   },
@@ -59,6 +65,8 @@ const AchievementCard = ({ achievement }) => {
         style={{ maxHeight: '10px' }}
       />
       <div className="card-body flex-grow-1">
+        <h5 className='text-center'>{achievement.title}</h5>
+        <div class="titleUnderLineBrand mb-4"></div>
         <p className="card-text">{achievement.text}</p>
       </div>
     </div>
@@ -67,10 +75,9 @@ const AchievementCard = ({ achievement }) => {
 
 const Achievements = () => {
   // Divide achievementsData into three columns
-  const columnSize = Math.ceil(achievementsData.length / 3);
+  const columnSize = Math.ceil(achievementsData.length / 2);
   const column1 = achievementsData.slice(0, columnSize);
   const column2 = achievementsData.slice(columnSize, columnSize * 2);
-  const column3 = achievementsData.slice(columnSize * 2);
 
   return (
     <div className="pt-5" id="achievements">
@@ -79,18 +86,13 @@ const Achievements = () => {
         <h2>Achievements and Milestones</h2>
       </header>
       <div className="row m-3 justify-content-md-center pb-5">
-        <div className="col-md-3 wow zoomIn pb-4" data-wow-delay="0.1s">
+        <div className="col-md-4 wow zoomIn pb-4" data-wow-delay="0.1s">
           {column1.map((achievement, index) => (
             <AchievementCard key={index} achievement={achievement} />
           ))}
         </div>
-        <div className="col-md-3 wow zoomIn" data-wow-delay="0.3s">
+        <div className="col-md-4 wow zoomIn" data-wow-delay="0.3s">
           {column2.map((achievement, index) => (
-            <AchievementCard key={index} achievement={achievement} />
-          ))}
-        </div>
-        <div className="col-md-3 wow zoomIn" data-wow-delay="0.5s">
-          {column3.map((achievement, index) => (
             <AchievementCard key={index} achievement={achievement} />
           ))}
         </div>
