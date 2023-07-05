@@ -20,14 +20,12 @@
 
 
 .custom-shape-divider-bottom-1688374069 {
-    position: absolute;
-    bottom: 0;
-    left: 0;
     width: 100%;
     overflow: hidden;
     line-height: 0;
     transform: rotate(180deg);
-    margin: -1px;}
+    margin: -3px;
+}
 
 .custom-shape-divider-bottom-1688374069 svg {
     position: relative;
