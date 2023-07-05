@@ -3,7 +3,7 @@ import React from 'react';
 const achievementsData = [
   {
     title: 'Research (SaaS)',
-    text: 'Led Research and UI design for the backend (Modular SaaS).',
+    text: 'Spearheaded research and led the UI design for the backend of the Modular SaaS platform.',
     image: require('../img/pexels-4.jpg'),
   },
   {
@@ -80,23 +80,25 @@ const Achievements = () => {
   const column2 = achievementsData.slice(columnSize, columnSize * 2);
 
   return (
-    <div className="pt-5" id="achievements">
+    <div className="container" id="achievements">
+    <div className="pt-5">
       <header className="section-header section-header-custom-bg text-center wow zoomIn pt-3" data-wow-delay="0.1s">
         <p className="sectionSeparator">A Journey of Success</p>
         <h2>Achievements and Milestones</h2>
       </header>
       <div className="row m-3 justify-content-md-center pb-5">
-        <div className="col-md-4 wow zoomIn pb-4" data-wow-delay="0.1s">
+        <div className="col-md-5 wow zoomIn pb-4" data-wow-delay="0.1s">
           {column1.map((achievement, index) => (
             <AchievementCard key={index} achievement={achievement} />
           ))}
         </div>
-        <div className="col-md-4 wow zoomIn" data-wow-delay="0.3s">
+        <div className="col-md-5 wow zoomIn" data-wow-delay="0.3s">
           {column2.map((achievement, index) => (
             <AchievementCard key={index} achievement={achievement} />
           ))}
         </div>
-      </div>
+        </div>
+        </div>
     </div>
   );
 };
