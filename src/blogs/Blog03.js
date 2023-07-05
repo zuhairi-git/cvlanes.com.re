@@ -55,7 +55,7 @@ class App extends React.Component {
                         </p>
                         <div className='text-center mb-5 mt-5'>
                             <div className='bg-image'>
-                                <img className='w-100' src={require('../img/blog/Human-AI/human-VR.webp')} style={{ width: '100%' }} alt='Image' />
+                                <img className='w-100' src={require('../img/blog/Human-AI/itsmeai.webp')} style={{ width: '100%' }} alt='Image' />
                             </div>
                         </div>
 
@@ -107,6 +107,11 @@ class App extends React.Component {
                         <p>
                             The inception of this idea behind this article was not driven by me being against AI, but rather by a profound belief in the significance of expanding our understanding of the ever-changing world and redefining educational principles. We stand at a pivotal moment in history, where the path we tread holds the potential for irreversible consequences. This demands a profound change in our approach to education and the work environment. As I often emphasize, the focus should not solely be on enhancing the intelligence of our surroundings. Instead, we ought to explore ways to enhance human capabilities and embrace the enhancement of our creativity.
                         </p>
+                        <div className='text-center mb-5 mt-5'>
+                            <div className='bg-image'>
+                                <img className='w-100' src={require('../img/blog/Human-AI/aivshuman.webp')} style={{ width: '100%' }} alt='Image' />
+                            </div>
+                        </div>
                         <p>
                             To accomplish this, in my opinion, there are three key points to consider:
                             <ol>
@@ -161,6 +166,14 @@ class App extends React.Component {
                         </h4>
                         <p>
                             Having discussed the significance of AI, it is worth noting that there is already an ideation of Artificial General Intelligence (AGI). AGI refers to a machine that can learn and comprehend any intellectual task that a human being can, and can even develop capabilities beyond the scope of traditional AI systems.
+                        </p>
+                        <div className='text-center mb-4'>
+                            <div className='bg-image'>
+                                <img className='w-100' src={require('../img/blog/Human-AI/agicoming.webp')} style={{ width: '100%' }} alt='Image' />
+                            </div>
+                        </div>
+                        <p>
+                            Finally, I want to express my gratitude for your patience and for taking the time to read this article in its entirety. If you have any questions, please don't hesitate to contact me anytime. I'll be more than happy to hear your feedback.
                         </p>
                         <BlogShare />
                     </div>
