@@ -121,6 +121,9 @@ class App extends React.Component {
                                 </li>
                             </ol>
                         </p>
+                        <p>
+                            It is important to understand the ever-changing world and redefining educational principles to cope with new sophisticated challenges we are currently facing.
+                        </p>
                         <div className='text-center'>
                             <h3 className='mt-5'>Chapter Two - Rewrite the rules</h3>
                             <div className='titleUnderLine mb-4'></div>
@@ -145,8 +148,7 @@ class App extends React.Component {
                             </li>
                         </ol>
                         <p>
-                            My first attempt sounds good enough for me. Now, bear in mind that you should shift your mindset to understand this vision. It may not appear practical, but think about a world without any authoritarian force, where humans simply live side by side in a world that caters to all human needs.
-                        </p>
+                            My first attempt to build on the idea of exploiting the concept of control and decision making in a world where AI plays a significant role sounds good enough for me. Now, bear in mind that you should shift your mindset to understand this vision. It may not appear practical, but think about a world without any authoritarian force, where humans simply live side by side in a world that caters to all human needs.                        </p>
                         <h4>
                             Final Conclusion
                         </h4>
@@ -155,7 +157,7 @@ class App extends React.Component {
                         </p>
 
                         <h4>
-                            There is more...
+                            What is coming next?
                         </h4>
                         <p>
                             Having discussed the significance of AI, it is worth noting that there is already an ideation of Artificial General Intelligence (AGI). AGI refers to a machine that can learn and comprehend any intellectual task that a human being can, and can even develop capabilities beyond the scope of traditional AI systems.
