@@ -8,7 +8,7 @@ const achievementsData = [
   },
   {
     title: 'UI/UX',
-    text: 'Developed UI and UX frameworks for all company platforms.',
+    text: 'Created UI and UX frameworks for various platforms utilized across the company.',
     image: require('../img/pexels-4.jpg'),
   },
   {
@@ -87,7 +87,7 @@ const Achievements = () => {
           <h2>Achievements and Milestones</h2>
         </header>
         <div className="row justify-content-md-center pb-5">
-          <div className="col-md-5 wow zoomIn pb-4" data-wow-delay="0.1s">
+          <div className="col-md-5 wow zoomIn" data-wow-delay="0.1s">
             {column1.map((achievement, index) => (
               <AchievementCard key={index} achievement={achievement} />
             ))}
