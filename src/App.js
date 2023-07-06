@@ -31,7 +31,7 @@ function App() {
           title: "Portfolio",
           description: "Where Magic Happens",
           ogType: "Page",
-          ogImage: "https://cvlanes.com/img/jobseeking/jobseeking-cover.jpeg",
+          ogImage: "https://cvlanes.com/img/portfolio-cover-dark.jpeg",
           ogImageWidth: "1200",
           ogImageHeight: "630",
           imageAlt: "Portfolio",
@@ -117,16 +117,20 @@ function App() {
         {metaTags.ogType && (
           <>
             <meta property="og:type" content={metaTags.ogType} />
+            <meta property="og:title" content={metaTags.title} />
+            <meta property="og:description" content={metaTags.description} />
+            <meta property="og:url" content={metaTags.ogUrl} />
             <meta property="og:image" content={metaTags.ogImage} />
             <meta property="og:image:width" content={metaTags.ogImageWidth} />
             <meta property="og:image:height" content={metaTags.ogImageHeight} />
           </>
         )}
         {metaTags.imageAlt && (
-          <meta name="image:alt" content={metaTags.imageAlt} />
+          <meta property="image:alt" content={metaTags.imageAlt} />
         )}
         {/* Add other meta tags based on the metaTags object */}
       </Helmet>
+
 
       <Routes>
         <Route path="/" element={<Home />} />
