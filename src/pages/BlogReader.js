@@ -110,7 +110,7 @@ const BlogReader = ({ contentUrl }) => {
             </div>
           ) : (
             <div className="col-auto playButton mb-1 ms-3 me-2" onClick={speak}>
-              <FontAwesomeIcon icon={faPlay} className={isPlayButtonSelected ? "text-info" : ""} />
+              <FontAwesomeIcon icon={faPlay} className={isPlayButtonSelected ? "text-danger" : ""} />
             </div>
           )}
           <div className="col-auto playButton mb-1 ms-3 me-2" onClick={stopSpeaking}>
