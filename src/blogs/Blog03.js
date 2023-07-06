@@ -4,7 +4,6 @@ import TopNavGeneric from '../pages/TopNavGeneric';
 import Footer from '../pages/Footer';
 import BlogAuthor from './BlogAuthor';
 import BlogShare from './BlogShare';
-import ReadingTimeEstimator from './ReadingTimeEstimator';
 import BlogReader from '../pages/BlogReader'
 import content from '../text/blog03.txt';
 
@@ -42,7 +41,7 @@ class App extends React.Component {
                     <div className='blog-width m-5-xl m-5-lg m-1-xs m-1-sm mx-auto'>
                         <h4 className='primary-title'>Embracing the Era of AI: Humanity's Journey to Unparalleled Sophistication</h4>
                         <BlogAuthor datePublished={dateOfPublish} />
-                         { /*<ReadingTimeEstimator filePath={content} /> */ }
+
                         <BlogReader contentUrl={contentUrl} />
                         <div className='quoteContainer mb-5'>
                             <q className='mb-4'>

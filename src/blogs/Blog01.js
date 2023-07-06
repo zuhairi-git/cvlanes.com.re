@@ -4,6 +4,8 @@ import TopNavGeneric from '../pages/TopNavGeneric';
 import Footer from '../pages/Footer';
 import BlogAuthor from '../blogs/BlogAuthor';
 import BlogShare from '../blogs/BlogShare';
+import ReadingTimeEstimator from './ReadingTimeEstimator';
+import content from '../text/blog02.txt';
 
 class App extends React.Component {
     componentDidMount() {
@@ -36,7 +38,8 @@ class App extends React.Component {
                 <div className="container-fluid">
                     <div className='blog-width m-5 mx-auto'>
                         <h2 className='primary-title'>Circle of Daily Rhythm</h2>
-                        <BlogAuthor datePublished={dateOfPublish}/>
+                        <BlogAuthor datePublished={dateOfPublish} />
+                        <ReadingTimeEstimator filePath={content} />
                         <p className='mb-4'>
                             The circle of daily rhythm is the pattern of behaviors and activities that one follows throughout a typical day. This can include things like waking up, eating, preparing, working or studying, exercising, and sleeping. Taking notes about the circle of one's daily rhythm can be a useful exercise in understanding and optimizing one's daily routine.
 
@@ -44,7 +47,7 @@ class App extends React.Component {
                         </p>
                         <div className='text-center mb-5 mt-5'>
                             <div className='bg-image'>
-                                <img className='w-100 image-circle' src={require('../img/blog-writing.jpg')} alt='Image'/>
+                                <img className='w-100 image-circle' src={require('../img/blog-writing.jpg')} alt='Image' />
                             </div>
                         </div>
                         <h2>Brainstorming</h2>
