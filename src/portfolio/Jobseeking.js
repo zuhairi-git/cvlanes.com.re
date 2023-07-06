@@ -4,6 +4,7 @@ import TopNavGeneric from '../pages/TopNavGeneric';
 import Footer from '../pages/Footer';
 import { Container, Row, Col, Card, Button } from 'react-bootstrap';
 import LowFidJobseekingCarousel from '../generic/carousel/jobseeking/LowFidJobseekingCarousel';
+import BackToTopButton from '../generic/BackToTopButton';
 
 class App extends React.Component {
     componentDidMount() {
@@ -367,7 +368,7 @@ class App extends React.Component {
                         </div>
                     </div>
                 </div>
-
+                <BackToTopButton />
                 <Footer />
             </div>
 

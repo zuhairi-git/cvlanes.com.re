@@ -3,6 +3,7 @@ import WOW from 'wowjs';
 import TopNavGeneric from '../pages/TopNavGeneric';
 import Footer from '../pages/Footer';
 import { Row, Col, Card, Button } from 'react-bootstrap';
+import BackToTopButton from '../generic/BackToTopButton';
 
 class App extends React.Component {
     componentDidMount() {
@@ -583,7 +584,7 @@ class App extends React.Component {
                         </div>
                     </div>
                 </div>
-
+                <BackToTopButton />
                 <Footer />
             </div>
 

@@ -8,6 +8,7 @@ import ReadingTimeEstimator from './ReadingTimeEstimator';
 import content from '../text/blog02.txt';
 import BlogList from '../pages/BlogList';
 import { Container, Row, Col } from 'react-bootstrap';
+import BackToTopButton from '../generic/BackToTopButton';
 
 class App extends React.Component {
     componentDidMount() {
@@ -110,6 +111,7 @@ class App extends React.Component {
                         </Container>
                     </div>
                 </div>
+                <BackToTopButton />
                 <Footer />
             </div>
 

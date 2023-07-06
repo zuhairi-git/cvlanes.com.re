@@ -8,6 +8,7 @@ import BlogReader from '../pages/BlogReader'
 import content from '../text/blog03.txt';
 import BlogList from '../pages/BlogList';
 import { Container, Row, Col } from 'react-bootstrap';
+import BackToTopButton from '../generic/BackToTopButton';
 
 class App extends React.Component {
     componentDidMount() {
@@ -221,6 +222,7 @@ class App extends React.Component {
                     </div>
 
                 </div>
+                <BackToTopButton />
                 <Footer />
             </div>
 
