@@ -19,6 +19,28 @@
     z-index: 999;
   }
 
+.playButton{
+    width: 48px;
+    height: 48px;
+    text-align: center;
+    padding: 11px 16px;
+    border: 1px solid #efefef;
+    border-radius: 3px;
+}
+
+.playButton:hover {
+    box-shadow: #04eaff60 0px 0px 10px;
+}
+
+.playButtonTime{
+    width: auto;
+    height: 48px;
+    text-align: center;
+    padding: 11px 16px;
+    border: 1px solid #efefef;
+    border-radius: 3px;
+}
+
 .brandColors {
     color: #1EB6C3;
     color: #C8E7EA;
@@ -27,11 +49,15 @@
     color: #FFE54C;
 }
 
+img {
+    border-radius: 3px;
+}
+
 .quoteContainer {
     background-color: #C8E7EA;
     padding: 20px;
     font-size: 130%;
-    border-radius: 10px;
+    border-radius: 1px;
 } 
 
 .quoteHighlight {
