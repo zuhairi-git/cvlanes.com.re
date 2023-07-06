@@ -25,11 +25,11 @@ const BlogPage = ({ id, title, to, image, content, style }) => {
 const BlogList = ({ idsToShow, style }) => {
   const blogs = [
     {
-      id: 1,
-      title: 'Circle of Daily Rhythm',
-      to: '/blogs/circle-of-rhythm',
-      image: require('../img/blog-writing.jpg'),
-      content: 'The circle of daily rhythm is the pattern of behaviors and activities that one follows throughout a typical day.',
+      id: 3,
+      title: "Embracing the Era of AI",
+      to: '/blogs/premitive-human',
+      image: require('../img/blog/Human-AI/chess-ai.webp'),
+      content: 'I have a feeling that with the progress of AI and the advancements in machine learning, our world will reach such a level of sophistication that most humans may appear primitive once more.',
       hidden: false,
     },
 
@@ -43,11 +43,11 @@ const BlogList = ({ idsToShow, style }) => {
     },
 
     {
-      id: 3,
-      title: "Embracing the Era of AI",
-      to: '/blogs/premitive-human',
-      image: require('../img/blog/Human-AI/chess-ai.webp'),
-      content: 'I have a feeling that with the progress of AI and the advancements in machine learning, our world will reach such a level of sophistication that most humans may appear primitive once more.',
+      id: 1,
+      title: 'Circle of Daily Rhythm',
+      to: '/blogs/circle-of-rhythm',
+      image: require('../img/blog-writing.jpg'),
+      content: 'The circle of daily rhythm is the pattern of behaviors and activities that one follows throughout a typical day.',
       hidden: false,
     },
 
@@ -67,7 +67,7 @@ const BlogList = ({ idsToShow, style }) => {
           to={blog.to}
           image={blog.image}
           content={blog.content}
-          style={style} 
+          style={style}
         />
       </div>
     ));

@@ -7,6 +7,7 @@ import BlogShare from '../blogs/BlogShare';
 import ReadingTimeEstimator from './ReadingTimeEstimator';
 import content from '../text/blog02.txt';
 import BlogList from '../pages/BlogList';
+import { Container, Row, Col } from 'react-bootstrap';
 
 class App extends React.Component {
     componentDidMount() {
@@ -98,10 +99,15 @@ class App extends React.Component {
                             Overall, this is a rough outline of my daily rhythm.
                         </p>
                         <BlogShare />
-                        <div className='mt-5'>
-                            <h3>More Posts</h3>
+                        
+                        <Container>
+                            <Row>
+                                <Col>
+                                    <h3 className="text-center my-5">More Posts</h3>
+                                </Col>
+                            </Row>
                             <BlogList idsToShow={[2, 3]} style={{ fontSize: '60%' }} />
-                        </div>
+                        </Container>
                     </div>
                 </div>
                 <Footer />

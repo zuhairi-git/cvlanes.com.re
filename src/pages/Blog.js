@@ -30,7 +30,7 @@ const BlogPage = () => {
                         <h1 className="text-center my-5 primary-title display-2">My Blog</h1>
                     </Col>
                 </Row>
-                <BlogList idsToShow={[1, 2, 3]} />
+                <BlogList idsToShow={[3, 2, 1]} />
             </Container>
             <Footer />
 

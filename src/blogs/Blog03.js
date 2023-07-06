@@ -7,6 +7,7 @@ import BlogShare from './BlogShare';
 import BlogReader from '../pages/BlogReader'
 import content from '../text/blog03.txt';
 import BlogList from '../pages/BlogList';
+import { Container, Row, Col } from 'react-bootstrap';
 
 class App extends React.Component {
     componentDidMount() {
@@ -206,11 +207,17 @@ class App extends React.Component {
                         <p>
                             Finally, I want to express my gratitude for your patience and for taking the time to read this article in its entirety. If you have any questions, please don't hesitate to contact me anytime. I'll be more than happy to hear your feedback.
                         </p>
+
                         <BlogShare />
-                        <div className='mt-5'>
-                            <h3>More Posts</h3>
+
+                        <Container>
+                            <Row>
+                                <Col>
+                                    <h3 className="text-center my-5">More Posts</h3>
+                                </Col>
+                            </Row>
                             <BlogList idsToShow={[1, 2]} style={{ fontSize: '60%' }} />
-                        </div>
+                        </Container>
                     </div>
 
                 </div>

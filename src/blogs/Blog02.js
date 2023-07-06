@@ -9,6 +9,7 @@ import { TikTok } from "react-tiktok";
 import ReadingTimeEstimator from './ReadingTimeEstimator';
 import content from '../text/blog01.txt';
 import BlogList from '../pages/BlogList';
+import { Container, Row, Col } from 'react-bootstrap';
 
 class App extends React.Component {
     componentDidMount() {
@@ -74,10 +75,15 @@ class App extends React.Component {
                             Also, for more information on this feature, check out this link to Apple's support page: <a href='https://support.apple.com/en-gb/HT212608'>https://support.apple.com/en-gb/HT212608</a>.</p>
 
                         <BlogShare />
-                        <div className='mt-5'>
-                            <h3>More Posts</h3>
+
+                        <Container>
+                            <Row>
+                                <Col>
+                                    <h3 className="text-center my-5">More Posts</h3>
+                                </Col>
+                            </Row>
                             <BlogList idsToShow={[1, 3]} style={{ fontSize: '60%' }} />
-                        </div>
+                        </Container>
                     </div>
 
                 </div>
