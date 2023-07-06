@@ -64,7 +64,7 @@ const BlogReader = ({ contentUrl }) => {
   };
 
   const calculateReadingTime = () => {
-    const wordsPerMinute = 170; // Average reading speed in words per minute
+    const wordsPerMinute = 200; // Average reading speed in words per minute
     const wordCount = blogContent.split(' ').length;
     const minutes = Math.ceil(wordCount / wordsPerMinute);
     setReadingTime(`${minutes} min read`);
