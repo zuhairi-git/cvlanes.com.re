@@ -7,6 +7,7 @@ const BlogReader = ({ contentUrl }) => {
   const [blogContent, setBlogContent] = useState('');
   const [currentTime, setCurrentTime] = useState('00:00');
   const [readingTime, setReadingTime] = useState('');
+  const [isPlayButtonSelected, setIsPlayButtonSelected] = useState(false);
 
   const fetchBlogContent = async () => {
     try {
@@ -28,11 +29,13 @@ const BlogReader = ({ contentUrl }) => {
     speech.pitch = 1;
     window.speechSynthesis.speak(speech);
     setIsSpeaking(true);
+    setIsPlayButtonSelected(true);
   };
 
   const pauseSpeaking = () => {
     window.speechSynthesis.pause();
     setIsSpeaking(false);
+    setIsPlayButtonSelected(false);
   };
 
   const resumeSpeaking = () => {
@@ -103,11 +106,11 @@ const BlogReader = ({ contentUrl }) => {
 
           {isSpeaking ? (
             <div className="col-auto playButton mb-1 ms-3 me-2" onClick={pauseSpeaking}>
-              <FontAwesomeIcon icon={faPause} />
+              <FontAwesomeIcon icon={faPause} className={isPlayButtonSelected ? "text-info" : ""} />
             </div>
           ) : (
             <div className="col-auto playButton mb-1 ms-3 me-2" onClick={speak}>
-              <FontAwesomeIcon icon={faPlay} />
+              <FontAwesomeIcon icon={faPlay} className={isPlayButtonSelected ? "text-info" : ""} />
             </div>
           )}
           <div className="col-auto playButton mb-1 ms-3 me-2" onClick={stopSpeaking}>
