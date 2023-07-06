@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const BlogPage = ({ id, title, to, image, content }) => {
+const BlogPage = ({ id, title, to, image, content, style }) => {
   const handleClick = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
@@ -10,17 +10,19 @@ const BlogPage = ({ id, title, to, image, content }) => {
     <div className="card d-flex flex-column">
       <img src={image} className="card-img-top" alt="Blog Image" />
       <div className="card-body d-flex flex-column">
-        <h5 className="card-title">{title}</h5>
-        <p className="card-text">{content}</p>
+        <h5 className="card-title" style={style}>{title}</h5>
+        <p className="card-text" style={style}>{content}</p>
         <div className="mt-auto">
-          <Link to={to} className="btn btn-primary" onClick={handleClick}>Read More</Link>
+          <Link to={to} className="btn btn-primary" onClick={handleClick}>
+            Read More
+          </Link>
         </div>
       </div>
     </div>
   );
 };
 
-const BlogList = () => {
+const BlogList = ({ idsToShow, style }) => {
   const blogs = [
     {
       id: 1,
@@ -52,7 +54,12 @@ const BlogList = () => {
   ];
 
   const renderBlogs = () => {
-    return blogs.map((blog) => (
+    let filteredBlogs = blogs;
+    if (idsToShow) {
+      filteredBlogs = blogs.filter(blog => idsToShow.includes(blog.id));
+    }
+
+    return filteredBlogs.map((blog) => (
       <div key={blog.id} className={`col-md-4 mb-4 d-flex ${blog.hidden ? 'd-none' : ''}`}>
         <BlogPage
           id={blog.id}
@@ -60,6 +67,7 @@ const BlogList = () => {
           to={blog.to}
           image={blog.image}
           content={blog.content}
+          style={style} 
         />
       </div>
     ));
