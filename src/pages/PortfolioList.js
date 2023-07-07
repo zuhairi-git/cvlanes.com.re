@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 
-const PortfolioPage = ({ id, title, subtitle, to, image, content }) => {
+const PortfolioPage = ({ id, title, subtitle, to, image, content, classBtn, textBtn }) => {
     const handleClick = () => {
         window.scrollTo({ top: 0, behavior: 'smooth' });
     };
@@ -15,7 +15,7 @@ const PortfolioPage = ({ id, title, subtitle, to, image, content }) => {
                 <p className="card-text fw-light">{subtitle}</p>
                 <p className="card-text">{content}</p>
                 <div className="mt-auto">
-                    <Link to={to} className="btn btn-primary" onClick={handleClick}>Read More</Link>
+                    <Link to={to} className={classBtn} onClick={handleClick}>{textBtn}</Link>
                 </div>
             </div>
         </div>
@@ -31,7 +31,9 @@ const PortfolioList = () => {
             to: '/portfolio/jobseeking',
             image: require('../img/jobseeking/jobseeking-cover.jpeg'),
             content: 'User journey and behavior analytics. User actions, awareness, consideration, loyalty, feelings, opportunities, and pain points.',
+            textBtn: 'Read More',
             hidden: false,
+            classBtn: 'btn btn-primary',
         },
 
         {
@@ -41,27 +43,31 @@ const PortfolioList = () => {
             to: '/portfolio/collaboration',
             image: require('../img/collaboration/cwp.png'),
             content: 'Enabling a smooth and effective system for real-time collaboration on documents.',
+            textBtn: 'Read More',
             hidden: false,
+            classBtn: 'btn btn-primary',
         },
 
         {
             id: 3,
             title: "Smart Shopping",
             subtitle: "Next..",
-            to: '/',
             image: require('../img/smart-shopping/smart-shopping-cover.jpg'),
             content: 'Why not take pleasure when there is an opportunity?',
+            textBtn: 'Coming Later',
             hidden: false,
+            classBtn: 'text-secondary p-2',
         },
 
         {
             id: 4,
             title: "Smart Banking",
             subtitle: "After Next..",
-            to: '/',
             image: require('../img/smart-banking/hassle-free-banking.jpg'),
             content: 'Hassle free banking application. It is time to get productive.',
+            textBtn: 'Coming Later',
             hidden: false,
+            classBtn: 'text-secondary p-2',
         },
 
     ];
@@ -76,6 +82,8 @@ const PortfolioList = () => {
                     to={portfolio.to}
                     image={portfolio.image}
                     content={portfolio.content}
+                    textBtn={portfolio.textBtn}
+                    classBtn={portfolio.classBtn}
                 />
             </div>
         ));
