@@ -3,6 +3,7 @@ import TopNavGeneric from './TopNavGeneric';
 import Footer from './Footer';
 import { Container, Row, Col } from 'react-bootstrap';
 import BlogList from '../blogs/BlogList';
+import BackToTopButton from '../generic/BackToTopButton';
 
 const BlogPage = () => {
     return (
@@ -32,6 +33,7 @@ const BlogPage = () => {
                 </Row>
                 <BlogList idsToShow={[3, 2, 1]} />
             </Container>
+            <BackToTopButton />
             <Footer />
 
         </div>

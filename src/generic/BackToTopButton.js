@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import { Bootstrap } from 'react-bootstrap-icons';
 
 const BackToTopButton = () => {
   const [showButton, setShowButton] = useState(false);

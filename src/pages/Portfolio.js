@@ -3,6 +3,7 @@ import TopNavGeneric from './TopNavGeneric';
 import Footer from './Footer';
 import { Container, Row, Col } from 'react-bootstrap';
 import PortfolioList from './PortfolioList';
+import BackToTopButton from '../generic/BackToTopButton';
 
 const PortfolioPage = () => {
     return (
@@ -31,6 +32,7 @@ const PortfolioPage = () => {
                 </Row>
                 <PortfolioList />
             </Container>
+            <BackToTopButton />
             <Footer />
 
         </div>
