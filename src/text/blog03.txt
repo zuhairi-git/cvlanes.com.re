@@ -36,9 +36,9 @@ Pivotal Moment!
 The inception of this idea behind this article was not driven by me being against AI, but rather by a profound belief in the significance of expanding our understanding of the ever-changing world and redefining educational principles. We stand at a pivotal moment in history, where the path we tread holds the potential for irreversible consequences. This demands a profound change in our approach to education and the work environment. As I often emphasize, the focus should not solely be on enhancing the intelligence of our surroundings. Instead, we ought to explore ways to enhance human capabilities and embrace the enhancement of our creativity.
 
 To accomplish this, in my opinion, there are three key points to consider:
-Know-what: It is crucial to understand what AI is and how developers interact with it at a code level. This ensure gaining knowledge about the inner workings of AI systems.
-Know-why: We must strive to reach a collective understanding and, ideally, an agreement on why we need AI. This involves recognizing the benefits and potential risks associated with its implementation.
-Know-how: By mastering the first two points, we can begin to establish regulations or boundaries that are universally understood and accepted.
+1. Know-what: It is crucial to understand what AI is and how developers interact with it at a code level. This ensure gaining knowledge about the inner workings of AI systems.
+2. Know-why: We must strive to reach a collective understanding and, ideally, an agreement on why we need AI. This involves recognizing the benefits and potential risks associated with its implementation.
+3. Know-how: By mastering the first two points, we can begin to establish regulations or boundaries that are universally understood and accepted.
 
 It is important to understand the ever-changing world and redefining educational principles to cope with new sophisticated challenges we are currently facing.
 
@@ -49,9 +49,9 @@ The core element revolves around control, and those who possess it can govern an
 Now, let's envision a world without traditional rules, and for that, I would like to propose three rules of robotics and convert them into three rules for humans:
 First attempt:
 
-Individuals must comply with and respect the autonomy and well-being of others.
-Individuals must avoid actions or situations that may physically or psychologically harm other humans.
-Within their domain, individuals are free to act as they wish as long as their actions align with the principles outlined in the first and second laws.
+1. Individuals must comply with and respect the autonomy and well-being of others.
+2. Individuals must avoid actions or situations that may physically or psychologically harm other humans.
+3. Within their domain, individuals are free to act as they wish as long as their actions align with the principles outlined in the first and second laws.
 My first attempt to build on the idea of exploiting the concept of control and decision making in a world where AI plays a significant role sounds good enough for me. Now, bear in mind that you should shift your mindset to understand this vision. It may not appear practical, but think about a world without any authoritarian force, where humans simply live side by side in a world that caters to all human needs.
 
 Chapter Three - UtopiAI!
