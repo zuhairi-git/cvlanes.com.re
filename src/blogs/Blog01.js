@@ -6,7 +6,7 @@ import BlogAuthor from '../blogs/BlogAuthor';
 import BlogShare from '../blogs/BlogShare';
 import ReadingTimeEstimator from './ReadingTimeEstimator';
 import content from '../text/blog02.txt';
-import BlogList from '../pages/BlogList';
+import BlogList from './BlogList';
 import { Container, Row, Col } from 'react-bootstrap';
 import BackToTopButton from '../generic/BackToTopButton';
 

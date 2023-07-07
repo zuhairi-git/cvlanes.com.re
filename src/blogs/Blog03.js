@@ -4,9 +4,9 @@ import TopNavGeneric from '../pages/TopNavGeneric';
 import Footer from '../pages/Footer';
 import BlogAuthor from './BlogAuthor';
 import BlogShare from './BlogShare';
-import BlogReader from '../pages/BlogReader'
+import BlogReader from './BlogReader'
 import content from '../text/blog03.txt';
-import BlogList from '../pages/BlogList';
+import BlogList from './BlogList';
 import { Container, Row, Col } from 'react-bootstrap';
 import BackToTopButton from '../generic/BackToTopButton';
 

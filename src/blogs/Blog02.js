@@ -8,7 +8,7 @@ import YoutubeShortsEmbed from "../generic/YoutubeShortsEmbed";
 import { TikTok } from "react-tiktok";
 import ReadingTimeEstimator from './ReadingTimeEstimator';
 import content from '../text/blog01.txt';
-import BlogList from '../pages/BlogList';
+import BlogList from './BlogList';
 import { Container, Row, Col } from 'react-bootstrap';
 import BackToTopButton from '../generic/BackToTopButton';
 

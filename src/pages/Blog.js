@@ -2,7 +2,7 @@ import React from 'react';
 import TopNavGeneric from './TopNavGeneric';
 import Footer from './Footer';
 import { Container, Row, Col } from 'react-bootstrap';
-import BlogList from './BlogList';
+import BlogList from '../blogs/BlogList';
 
 const BlogPage = () => {
     return (
