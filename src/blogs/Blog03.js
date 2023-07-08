@@ -9,7 +9,7 @@ import content from '../text/blog03.txt';
 import BlogList from './BlogList';
 import { Container, Row, Col } from 'react-bootstrap';
 import BackToTopButton from '../generic/BackToTopButton';
-import AudioPlayer from '../pages/Audio';
+import AudioPlayerMeta from '../pages/AudioMeta';
 import TextToSpeech from '../generic/TextToSpeech';
 
 class App extends React.Component {
@@ -24,7 +24,6 @@ class App extends React.Component {
         const contentUrl = content;
         // Date Publish
         const dateOfPublish = '2023-06-20';
-
         return (
             <div>
                 <TopNavGeneric />
@@ -47,7 +46,7 @@ class App extends React.Component {
                         <h4 className='primary-title'>Embracing the Era of AI: Humanity's Journey to Unparalleled Sophistication</h4>
                         <BlogAuthor datePublished={dateOfPublish} />
 
-                        <div><AudioPlayer audioFile={require("../audio/blog/blog03.mp3")} /></div>
+                        <div><AudioPlayerMeta albumCover={require("../img/cvlanes-favicon.png")} audioFile={require("../audio/blog/blog03.mp3")} /></div>
                         <div className='row mb-3 d-none'>
                             <div className='col-md-6'><BlogReader contentUrl={contentUrl} /></div>
                             <div className='col-md-6'><TextToSpeech textFile={require('../text/blog03.txt')} /></div>
