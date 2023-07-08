@@ -47,10 +47,13 @@ class App extends React.Component {
                         <h4 className='primary-title'>Embracing the Era of AI: Humanity's Journey to Unparalleled Sophistication</h4>
                         <BlogAuthor datePublished={dateOfPublish} />
 
-                        <div className='d-none'><AudioPlayer audioFile={require("../audio/blog/blog03.mp3")} /></div>
-                        <TextToSpeech textFile={require('../text/blog03.txt')} />
+                        <div><AudioPlayer audioFile={require("../audio/blog/blog03.mp3")} /></div>
+                        <div className='row mb-3 d-none'>
+                            <div className='col-md-6'><BlogReader contentUrl={contentUrl} /></div>
+                            <div className='col-md-6'><TextToSpeech textFile={require('../text/blog03.txt')} /></div>
+                        </div>
 
-                        <BlogReader contentUrl={contentUrl} />
+
                         <div className='quoteContainer mb-5'>
                             <q className='mb-4'>
                                 I have a feeling that with the progress of AI and the advancements in machine learning, our world will reach such a level of sophistication that most humans may appear <span className='quoteHighlight'>primitive once more.</span>
