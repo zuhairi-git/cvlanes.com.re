@@ -9,6 +9,8 @@ import content from '../text/blog03.txt';
 import BlogList from './BlogList';
 import { Container, Row, Col } from 'react-bootstrap';
 import BackToTopButton from '../generic/BackToTopButton';
+import AudioPlayer from '../pages/Audio';
+import TextToSpeech from '../generic/TextToSpeech';
 
 class App extends React.Component {
     componentDidMount() {
@@ -44,6 +46,9 @@ class App extends React.Component {
                     <div className='blog-width m-5-xl m-5-lg m-1-xs m-1-sm mx-auto'>
                         <h4 className='primary-title'>Embracing the Era of AI: Humanity's Journey to Unparalleled Sophistication</h4>
                         <BlogAuthor datePublished={dateOfPublish} />
+
+                        <div className='d-none'><AudioPlayer audioFile={require("../audio/blog/blog03.mp3")} /></div>
+                        <TextToSpeech textFile={require('../text/blog03.txt')} />
 
                         <BlogReader contentUrl={contentUrl} />
                         <div className='quoteContainer mb-5'>
