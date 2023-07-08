@@ -88,7 +88,7 @@ const AudioPlayerMeta = ({ audioFile, albumCover, metadata }) => {
       </audio>
 
       {albumCover && (
-        <div className='text-center'>
+        <div className='text-center d-none'>
           <img src={albumCover} alt="Album Cover" style={{ width: '50px', height: '50px', marginBottom: '-10px', borderRadius: '360px', padding: '3px', background: '#1EB6C3' }} />
         </div>
       )}
