@@ -24,6 +24,12 @@ class App extends React.Component {
         const contentUrl = content;
         // Date Publish
         const dateOfPublish = '2023-06-20';
+        const metadata = {
+            album: 'Album Name',
+            artist: 'Artist Name',
+            title: 'Audio Title'
+          };
+          
         return (
             <div>
                 <TopNavGeneric />
@@ -46,7 +52,15 @@ class App extends React.Component {
                         <h4 className='primary-title'>Embracing the Era of AI: Humanity's Journey to Unparalleled Sophistication</h4>
                         <BlogAuthor datePublished={dateOfPublish} />
 
-                        <div><AudioPlayerMeta albumCover={require("../img/cvlanes-favicon.png")} audioFile={require("../audio/blog/blog03.mp3")} /></div>
+                        <div>
+                            {/* Render other components or content */}
+                            <AudioPlayerMeta
+                                audioFile={require("../audio/blog/blog03.mp3")}
+                                albumCover={require("../img/cvlanes-favicon.png")}
+                                metadata={metadata}
+                            />
+                        </div>
+
                         <div className='row mb-3 d-none'>
                             <div className='col-md-6'><BlogReader contentUrl={contentUrl} /></div>
                             <div className='col-md-6'><TextToSpeech textFile={require('../text/blog03.txt')} /></div>

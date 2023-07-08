@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { FaPlay, FaPause, FaStop, FaBackward, FaForward } from 'react-icons/fa';
 
-const AudioPlayerMeta = ({ audioFile, albumCover }) => {
+const AudioPlayerMeta = ({ audioFile, albumCover, metadata }) => {
   const [isPlaying, setIsPlaying] = useState(false);
   const [speed, setSpeed] = useState(1);
   const [currentTime, setCurrentTime] = useState(0);
@@ -89,8 +89,18 @@ const AudioPlayerMeta = ({ audioFile, albumCover }) => {
 
       {albumCover && (
         <div className='text-center'>
-          <img src={albumCover} alt="Album Cover" style={{ width: '50px', height: '50px', marginBottom:'-10px', borderRadius:'360px', padding:'3px', background:'#1EB6C3' }} />
+          <img src={albumCover} alt="Album Cover" style={{ width: '50px', height: '50px', marginBottom: '-10px', borderRadius: '360px', padding: '3px', background: '#1EB6C3' }} />
         </div>
+      )}
+
+      {/* iOS Metadata */}
+      {metadata && (
+        <>
+          <meta name="apple-mobile-web-app-capable" content="yes" />
+          <meta name="apple-mobile-web-app-title" content={metadata.title} />
+          <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+          <meta name="apple-music-playback-info" content={JSON.stringify(metadata)} />
+        </>
       )}
 
       <div className="container mb-3">
