@@ -1,12 +1,11 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { FaPlay, FaPause, FaStop, FaBackward, FaForward } from 'react-icons/fa';
 
-const AudioPlayerMeta = ({ audioFile }) => {
+const AudioPlayerMeta = ({ audioFile, albumCover }) => {
   const [isPlaying, setIsPlaying] = useState(false);
   const [speed, setSpeed] = useState(1);
   const [currentTime, setCurrentTime] = useState(0);
   const [duration, setDuration] = useState(0);
-  const [metadata, setMetadata] = useState({});
 
   const audioRef = useRef(null);
 
@@ -14,11 +13,9 @@ const AudioPlayerMeta = ({ audioFile }) => {
     const audio = audioRef.current;
     audio.addEventListener('timeupdate', updateTime);
     audio.addEventListener('loadedmetadata', updateDuration);
-    audio.addEventListener('loadedmetadata', fetchMetadata); // Fetch metadata when audio metadata is loaded
     return () => {
       audio.removeEventListener('timeupdate', updateTime);
       audio.removeEventListener('loadedmetadata', updateDuration);
-      audio.removeEventListener('loadedmetadata', fetchMetadata);
     };
   }, []);
 
@@ -28,14 +25,6 @@ const AudioPlayerMeta = ({ audioFile }) => {
 
   const updateDuration = () => {
     setDuration(audioRef.current.duration);
-  };
-
-  const fetchMetadata = () => {
-    const audio = audioRef.current;
-    const artist = audio.getAttribute('artist'); // Assuming artist metadata is stored as an attribute
-    const albumCover = audio.getAttribute('album-cover'); // Assuming album cover metadata is stored as an attribute
-
-    setMetadata({ artist, albumCover });
   };
 
   const playAudio = () => {
@@ -91,20 +80,18 @@ const AudioPlayerMeta = ({ audioFile }) => {
     return `${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
   };
 
-  // Get the device width to conditionally render the metadata
-  const isMobile = window.innerWidth <= 767;
-
   return (
     <div>
       <audio ref={audioRef}>
         <source src={audioFile} type="audio/mpeg" />
         Your browser does not support the audio element.
       </audio>
-      {/* Display metadata only on mobile */}
-      {isMobile && metadata.albumCover && (
-        <img src={metadata.albumCover} alt="Album Cover" style={{ width: '100px', height: '100px' }} />
+
+      {albumCover && (
+        <div className='text-center'>
+          <img src={albumCover} alt="Album Cover" style={{ width: '50px', height: '50px', marginBottom:'-10px', borderRadius:'360px', padding:'3px', background:'#1EB6C3' }} />
+        </div>
       )}
-      {isMobile && metadata.artist && <p>Artist: {metadata.artist}</p>}
 
       <div className="container mb-3">
         <div className="row playContainer align-items-center pb-4 justify-content-center">
@@ -132,7 +119,8 @@ const AudioPlayerMeta = ({ audioFile }) => {
         </div>
         <div className="d-flex align-items-center justify-content-center">
           <div className="text-center playButtonTimeOver" style={{ marginTop: '-15px', fontSize: '14px' }}>
-            <span className='playButtonTimeOverCurrent'>{formatTime(currentTime)}</span> - <span>{formatTime(duration)}</span>
+            <span className="playButtonTimeOverCurrent">{formatTime(currentTime)}</span> -{' '}
+            <span>{formatTime(duration)}</span>
           </div>
         </div>
       </div>
@@ -141,10 +129,7 @@ const AudioPlayerMeta = ({ audioFile }) => {
         <div className="col">
           <div className="timeline-container">
             <div className="timeline">
-              <div
-                className="timeline-indicator"
-                style={{ width: `${(currentTime / duration) * 100}%` }}
-              />
+              <div className="timeline-indicator" style={{ width: `${(currentTime / duration) * 100}%` }} />
             </div>
           </div>
         </div>
