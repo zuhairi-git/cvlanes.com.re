@@ -87,25 +87,28 @@ const AudioPlayer = ({ audioFile }) => {
         Your browser does not support the audio element.
       </audio>
       <div className="row">
-        <div className="playButton m-md-3 m-xs-2 m-sm-2" onClick={isPlaying ? pauseAudio : playAudio}>
+        <div className="col-auto playButton m-md-3 m-xs-2 m-sm-2" onClick={isPlaying ? pauseAudio : playAudio}>
           {isPlaying ? <FaPause /> : <FaPlay />}
         </div>
-        <div className="playButton m-md-3 m-xs-2 m-sm-2" onClick={stopAudio}>
+        <div className="col-auto playButton m-md-3 m-xs-2 m-sm-2" onClick={stopAudio}>
           <FaStop />
         </div>
-        <div className="playButton m-md-3 m-xs-2 m-sm-2" onClick={handleBackward}>
+        <div className="col-auto playButton m-md-3 m-xs-2 m-sm-2" onClick={handleBackward}>
           <FaBackward />
         </div>
-        <div className="playButton m-md-3 m-xs-2 m-sm-2" onClick={handleForward}>
+        <div className="col-auto playButton m-md-3 m-xs-2 m-sm-2" onClick={handleForward}>
           <FaForward />
         </div>
-        <div className="playButton m-md-3 m-xs-2 m-sm-2" onClick={() => changeSpeed(1)}>
+        <div className="col-auto playButtonTime m-md-3 m-xs-2 m-sm-2">
+          <span>{formatTime(currentTime)}</span> / <span>{formatTime(duration)}</span>
+        </div>
+        <div className="col-auto playButton m-md-3 m-xs-2 m-sm-2" onClick={() => changeSpeed(1)}>
           1x
         </div>
-        <div className="playButton m-md-3 m-xs-2 m-sm-2" onClick={() => changeSpeed(2)}>
+        <div className="col-auto playButton m-md-3 m-xs-2 m-sm-2" onClick={() => changeSpeed(2)}>
           2x
         </div>
-        <div className="playButton m-md-3 m-xs-2 m-sm-2" onClick={() => changeSpeed(3)}>
+        <div className="col-auto playButton m-md-3 m-xs-2 m-sm-2" onClick={() => changeSpeed(3)}>
           3x
         </div>
       </div>
@@ -119,9 +122,6 @@ const AudioPlayer = ({ audioFile }) => {
               />
             </div>
           </div>
-        </div>
-        <div className="col-auto">
-          <span>{formatTime(currentTime)}</span> / <span>{formatTime(duration)}</span>
         </div>
       </div>
     </div>
