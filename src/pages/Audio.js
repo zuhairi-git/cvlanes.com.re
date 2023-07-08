@@ -99,17 +99,17 @@ const AudioPlayer = ({ audioFile }) => {
         <div className="col-md-auto col-sm-4 playButton m-2" onClick={handleForward}>
           <FaForward />
         </div>
-        <div className="col-md-auto col-sm-4 playButtonTime m-2">
+        <div className="col-md-auto col-sm-4 playButtonTime m-2" style={{minWidth: '120px'}}>
           <span>{formatTime(currentTime)}</span> / <span>{formatTime(duration)}</span>
         </div>
         <div className="col-md-auto col-sm-4 playButton m-2" onClick={() => changeSpeed(1)}>
-          1x
+          1.0
         </div>
-        <div className="col-md-auto col-sm-4 playButton m-2" onClick={() => changeSpeed(2)}>
-          2x
+        <div className="col-md-auto col-sm-4 playButton m-2" onClick={() => changeSpeed(1.3)}>
+          1.3
         </div>
-        <div className="col-md-auto col-sm-4 playButton m-2" onClick={() => changeSpeed(3)}>
-          3x
+        <div className="col-md-auto col-sm-4 playButton m-2" onClick={() => changeSpeed(1.6)}>
+          1.6
         </div>
       </div>
       <div className="row align-items-center">
