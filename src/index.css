@@ -59,6 +59,17 @@
     vertical-align: middle;
 }
 
+.playButtonTimeOver {
+    background: #def3f6;
+    height: 23px;
+    text-align: center;
+    border: 1px solid #b9b9b9;
+    padding: 0 6px;
+    border-radius: 360px;
+    font-size:  14px;
+    width: auto;
+}
+
 img {
     border-radius: 3px;
 }

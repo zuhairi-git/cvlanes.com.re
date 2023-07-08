@@ -87,29 +87,31 @@ const AudioPlayer = ({ audioFile }) => {
         Your browser does not support the audio element.
       </audio>
       <div className="container mb-3">
-        <div className="row playContainer align-items-center justify-content-center" style={{ paddingLeft: '4px' }}>
-          <div className="col-md-auto col-sm-4 playButton m-2" onClick={isPlaying ? pauseAudio : playAudio}>
+        <div className="row playContainer align-items-center pb-4 justify-content-center">
+          <div className="col-md-auto col-sm-4 playButton ms-2 me-2 mt-3" onClick={isPlaying ? pauseAudio : playAudio}>
             {isPlaying ? <FaPause /> : <FaPlay />}
           </div>
-          <div className="col-md-auto col-sm-4 playButton m-2" onClick={stopAudio}>
+          <div className="col-md-auto col-sm-4 playButton ms-2 me-2 mt-3" onClick={stopAudio}>
             <FaStop />
           </div>
-          <div className="col-md-auto col-sm-4 playButton m-2" onClick={handleBackward}>
+          <div className="col-md-auto col-sm-4 playButton ms-2 me-2 mt-3" onClick={handleBackward}>
             <FaBackward />
           </div>
-          <div className="col-md-auto col-sm-4 playButton m-2" onClick={handleForward}>
+          <div className="col-md-auto col-sm-4 playButton ms-2 me-2 mt-3" onClick={handleForward}>
             <FaForward />
           </div>
-          <div className="col-md-auto col-sm-4 playButton m-2" onClick={() => changeSpeed(1)}>
+          <div className="col-md-auto col-sm-4 playButton ms-2 me-2 mt-3" onClick={() => changeSpeed(1)}>
             1.0
           </div>
-          <div className="col-md-auto col-sm-4 playButton m-2" onClick={() => changeSpeed(1.3)}>
+          <div className="col-md-auto col-sm-4 playButton ms-2 me-2 mt-3" onClick={() => changeSpeed(1.3)}>
             1.3
           </div>
-          <div className="col-md-auto col-sm-4 playButton m-2" onClick={() => changeSpeed(1.6)}>
+          <div className="col-md-auto col-sm-4 playButton ms-2 me-2 mt-3" onClick={() => changeSpeed(1.6)}>
             1.6
           </div>
-          <div className="col m-2 text-end" style={{ minWidth: '100px',}}>
+        </div>
+        <div className="d-flex align-items-center justify-content-center">
+          <div className="text-center playButtonTimeOver" style={{ marginTop: '-15px', fontSize: '14px' }}>
             <span>{formatTime(currentTime)}</span> / <span>{formatTime(duration)}</span>
           </div>
         </div>
