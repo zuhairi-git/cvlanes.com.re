@@ -86,32 +86,35 @@ const AudioPlayer = ({ audioFile }) => {
         <source src={audioFile} type="audio/mpeg" />
         Your browser does not support the audio element.
       </audio>
-      <div className="row" style={{paddingLeft:'4px'}}>
-        <div className="col-md-auto col-sm-4 playButton m-2" onClick={isPlaying ? pauseAudio : playAudio}>
-          {isPlaying ? <FaPause /> : <FaPlay />}
-        </div>
-        <div className="col-md-auto col-sm-4 playButton m-2" onClick={stopAudio}>
-          <FaStop />
-        </div>
-        <div className="col-md-auto col-sm-4 playButton m-2" onClick={handleBackward}>
-          <FaBackward />
-        </div>
-        <div className="col-md-auto col-sm-4 playButton m-2" onClick={handleForward}>
-          <FaForward />
-        </div>
-        <div className="col-md-auto col-sm-4 playButtonTime m-2" style={{minWidth: '120px'}}>
-          <span>{formatTime(currentTime)}</span> / <span>{formatTime(duration)}</span>
-        </div>
-        <div className="col-md-auto col-sm-4 playButton m-2" onClick={() => changeSpeed(1)}>
-          1.0
-        </div>
-        <div className="col-md-auto col-sm-4 playButton m-2" onClick={() => changeSpeed(1.3)}>
-          1.3
-        </div>
-        <div className="col-md-auto col-sm-4 playButton m-2" onClick={() => changeSpeed(1.6)}>
-          1.6
+      <div className="container mb-3">
+        <div className="row playContainer align-items-center justify-content-center" style={{ paddingLeft: '4px' }}>
+          <div className="col-md-auto col-sm-4 playButton m-2" onClick={isPlaying ? pauseAudio : playAudio}>
+            {isPlaying ? <FaPause /> : <FaPlay />}
+          </div>
+          <div className="col-md-auto col-sm-4 playButton m-2" onClick={stopAudio}>
+            <FaStop />
+          </div>
+          <div className="col-md-auto col-sm-4 playButton m-2" onClick={handleBackward}>
+            <FaBackward />
+          </div>
+          <div className="col-md-auto col-sm-4 playButton m-2" onClick={handleForward}>
+            <FaForward />
+          </div>
+          <div className="col-md-auto col-sm-4 playButton m-2" onClick={() => changeSpeed(1)}>
+            1.0
+          </div>
+          <div className="col-md-auto col-sm-4 playButton m-2" onClick={() => changeSpeed(1.3)}>
+            1.3
+          </div>
+          <div className="col-md-auto col-sm-4 playButton m-2" onClick={() => changeSpeed(1.6)}>
+            1.6
+          </div>
+          <div className="col m-2 text-end" style={{ minWidth: '100px',}}>
+            <span>{formatTime(currentTime)}</span> / <span>{formatTime(duration)}</span>
+          </div>
         </div>
       </div>
+
       <div className="row align-items-center">
         <div className="col">
           <div className="timeline-container">

@@ -12,6 +12,15 @@
 # Main
 
 --------------------------------------------------------------*/
+.brandColors {
+    color: #1EB6C3;
+    color: #C8E7EA;
+    color: #EDEDF4;
+    color: #0D757F;
+    color: #FFE54C;
+    color: #def3f6;
+  }
+
 .back-to-top-btn {
     position: fixed;
     bottom: 20px;
@@ -19,34 +28,35 @@
     z-index: 999;
   }
 
-.playButton{
+.playContainer {
+    background-color: #def3f6;
+    border-radius: 3px;
+}
+
+.playButton {
     width: 32px;
     height: 32px;
     text-align: center;
-    padding: 2px 6px;
-    border: 1px solid #efefef;
+    padding: 3px 5px;
+    border: 1px solid #b9b9b9;
     border-radius: 3px;
+    cursor: pointer;
+    font-size:  14px;
 }
 
 .playButton:hover {
-    box-shadow: #04eaff60 0px 0px 10px;
+    box-shadow: #00cee1c0 0px 0px 10px;
 }
 
-.playButtonTime{
-    width: auto;
+.playButtonTime {
     height: 32px;
     text-align: center;
-    padding: 2px 6px;
-    border: 1px solid #efefef;
+    padding: 4px 6px;
+    border: 1px solid #b9b9b9;
     border-radius: 3px;
-}
-
-.brandColors {
-    color: #1EB6C3;
-    color: #C8E7EA;
-    color: #EDEDF4;
-    color: #0D757F;
-    color: #FFE54C;
+    font-size:  14px;
+    display: table-cell;
+    vertical-align: middle;
 }
 
 img {
