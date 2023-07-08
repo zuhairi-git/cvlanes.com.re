@@ -112,7 +112,7 @@ const AudioPlayer = ({ audioFile }) => {
         </div>
         <div className="d-flex align-items-center justify-content-center">
           <div className="text-center playButtonTimeOver" style={{ marginTop: '-15px', fontSize: '14px' }}>
-            <span>{formatTime(currentTime)}</span> / <span>{formatTime(duration)}</span>
+            <span className='playButtonTimeOverCurrent'>{formatTime(currentTime)}</span> - <span>{formatTime(duration)}</span>
           </div>
         </div>
       </div>

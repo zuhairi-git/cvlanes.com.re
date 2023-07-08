@@ -64,10 +64,17 @@
     height: 23px;
     text-align: center;
     border: 1px solid #b9b9b9;
-    padding: 0 6px;
+    padding: 0 6px 0 1px;
     border-radius: 360px;
     font-size:  14px;
     width: auto;
+}
+
+.playButtonTimeOverCurrent {
+    background: #1EB6C3;
+    padding: 1px 8px;
+    border-radius: 360px;
+    color: white;
 }
 
 img {
