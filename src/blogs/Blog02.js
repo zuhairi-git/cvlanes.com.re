@@ -11,6 +11,7 @@ import content from '../text/blog01.txt';
 import BlogList from './BlogList';
 import { Container, Row, Col } from 'react-bootstrap';
 import BackToTopButton from '../generic/BackToTopButton';
+import SocialMeida from '../generic/SocialMedia';
 
 class App extends React.Component {
     componentDidMount() {
@@ -75,7 +76,7 @@ class App extends React.Component {
                         <p>
                             Also, for more information on this feature, check out this link to Apple's support page: <a href='https://support.apple.com/en-gb/HT212608'>https://support.apple.com/en-gb/HT212608</a>.</p>
 
-                        <BlogShare />
+                        <SocialMeida />
 
                         <Container>
                             <Row>

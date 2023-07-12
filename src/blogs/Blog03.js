@@ -11,6 +11,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 import BackToTopButton from '../generic/BackToTopButton';
 import AudioPlayerMeta from '../pages/AudioMeta';
 import TextToSpeech from '../generic/TextToSpeech';
+import SocialMeida from '../generic/SocialMedia';
 
 class App extends React.Component {
     state = {
@@ -263,7 +264,7 @@ class App extends React.Component {
                             Finally, I want to express my gratitude for your patience and for taking the time to read this article in its entirety. If you have any questions, please don't hesitate to contact me anytime. I'll be more than happy to hear your feedback.
                         </p>
 
-                        <BlogShare />
+                        <SocialMeida />
 
                         <Container>
                             <Row>

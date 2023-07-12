@@ -12,6 +12,16 @@
 # Main
 
 --------------------------------------------------------------*/
+.connectWithMe {
+    background: #fff;
+    text-align: center;
+    border: 1px dashed #dcdcdc;
+    padding: 4px;
+    border-radius: 360px;
+    font-size:  14px;
+    width: auto;
+}
+
 
 .dashedLineHide {
     border-bottom: 1px dashed #d8d8d8;

@@ -9,6 +9,7 @@ import content from '../text/blog02.txt';
 import BlogList from './BlogList';
 import { Container, Row, Col } from 'react-bootstrap';
 import BackToTopButton from '../generic/BackToTopButton';
+import SocialMeida from '../generic/SocialMedia';
 
 class App extends React.Component {
     componentDidMount() {
@@ -99,7 +100,7 @@ class App extends React.Component {
                         <p className='mb-4'>
                             Overall, this is a rough outline of my daily rhythm.
                         </p>
-                        <BlogShare />
+                        <SocialMeida />
                         
                         <Container>
                             <Row>

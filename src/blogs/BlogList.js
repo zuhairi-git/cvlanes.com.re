@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import SocialMeida from '../generic/SocialMedia';
 
 const BlogPage = ({ id, title, to, image, content, style }) => {
   const handleClick = () => {
@@ -7,18 +8,20 @@ const BlogPage = ({ id, title, to, image, content, style }) => {
   };
 
   return (
-    <div className="card d-flex flex-column">
-      <img src={image} className="card-img-top" alt="Blog Image" />
-      <div className="card-body d-flex flex-column">
-        <h5 className="card-title" style={style}>{title}</h5>
-        <p className="card-text" style={style}>{content}</p>
-        <div className="mt-auto">
-          <Link to={to} className="btn btn-primary" onClick={handleClick}>
-            Read More
-          </Link>
+    <>
+      <div className="card d-flex flex-column">
+        <img src={image} className="card-img-top" alt="Blog Image" />
+        <div className="card-body d-flex flex-column">
+          <h5 className="card-title" style={style}>{title}</h5>
+          <p className="card-text" style={style}>{content}</p>
+          <div className="mt-auto">
+            <Link to={to} className="btn btn-primary" onClick={handleClick}>
+              Read More
+            </Link>
+          </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 
