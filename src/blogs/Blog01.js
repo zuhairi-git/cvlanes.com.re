@@ -101,11 +101,12 @@ class App extends React.Component {
                             Overall, this is a rough outline of my daily rhythm.
                         </p>
                         <SocialMeida />
-                        
+
                         <Container>
                             <Row>
                                 <Col>
-                                    <h3 className="text-center my-5">More Posts</h3>
+                                    <h3 className="text-center mt-5">More Posts</h3>
+                                    <div class="titleUnderLine mb-4"></div>
                                 </Col>
                             </Row>
                             <BlogList idsToShow={[2, 3]} style={{ fontSize: '60%' }} />
