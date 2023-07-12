@@ -13,12 +13,30 @@ import AudioPlayerMeta from '../pages/AudioMeta';
 import TextToSpeech from '../generic/TextToSpeech';
 
 class App extends React.Component {
+    state = {
+        showAdditionalContent: false,
+        showHideButton: false
+    };
+
     componentDidMount() {
         new WOW.WOW({
             live: false
         }).init();
     }
 
+    toggleAdditionalContent = () => {
+        this.setState(prevState => ({
+            showAdditionalContent: !prevState.showAdditionalContent,
+            showHideButton: true
+        }));
+    };
+
+    toggleHideContent = () => {
+        this.setState(prevState => ({
+            showAdditionalContent: !prevState.showAdditionalContent,
+            showHideButton: false
+        }));
+    };
     render() {
         // Content
         const contentUrl = content;
@@ -28,8 +46,8 @@ class App extends React.Component {
             album: 'Album Name',
             artist: 'Artist Name',
             title: 'Audio Title'
-          };
-          
+        };
+
         return (
             <div>
                 <TopNavGeneric />
@@ -98,27 +116,42 @@ class App extends React.Component {
                         <p>
                             The widespread integration of AI and ML is already leaving a significant impact on our daily lives. From autonomous vehicles to personalized recommendations, these technologies have enhanced convenience, efficiency, and productivity. However, the full potential of AI is yet to be realized. As AI algorithms continue to improve, they are likely to revolutionize industries such as healthcare, finance, transportation, and more, surpassing human capabilities in these fields.
                         </p>
+                        <div className='text-center mb-4'>
+                            {this.state.showHideButton ? (
+                                <button className="playButtonTimeOver ps-2 pe-2 mt-1 mb-4 text-secondary" onClick={this.toggleHideContent}>
+                                     <i className='fa fa-eye-slash'></i> Hide
+                                </button>
+                            ) : (
 
-                        <h4>The Potential for Human Primitiveness:</h4>
-                        <p>
-                            As AI and ML progress towards unprecedented sophistication, there arises a compelling argument that most humans may appear primitive in comparison. This perspective stems from the notion that the fusion of AI with advanced robotics, nanotechnology, and other emerging fields could result in machines surpassing human intelligence and physical capabilities. While it is crucial to approach this idea with caution, contemplating the potential outcomes is both intriguing and thought-provoking.
-                        </p>
+                                <button className="playButtonTimeOver ps-2 pe-2 mt-1 mb-4 text-secondary" onClick={this.toggleAdditionalContent}>
+                                    <i className='fa fa-eye'></i> Continue Reading Chapter Zero
+                                </button>
+                            )}
+                            <div className='dashedLineHide'></div>
+                        </div>
+                        {this.state.showAdditionalContent && (
+                            <div>
+                                <h4>The Potential for Human Primitiveness:</h4>
+                                <p>
+                                    As AI and ML progress towards unprecedented sophistication, there arises a compelling argument that most humans may appear primitive in comparison. This perspective stems from the notion that the fusion of AI with advanced robotics, nanotechnology, and other emerging fields could result in machines surpassing human intelligence and physical capabilities. While it is crucial to approach this idea with caution, contemplating the potential outcomes is both intriguing and thought-provoking.
+                                </p>
 
-                        <h4>Beyond the Boundaries of Human Limitations:</h4>
-                        <p>
-                            One of the primary drivers behind this belief is the limitations inherent in the human condition. Despite our remarkable achievements, humans are constrained by biological factors, including our cognitive capacities, lifespan, and susceptibility to errors. In contrast, AI systems have the potential to transcend these limitations, offering the ability to process and analyze vast amounts of information rapidly, make unbiased decisions, and continuously improve without succumbing to fatigue or emotional biases.
-                        </p>
-                        <h4></h4>
-                        <h4>A Synergistic Future:</h4>
-                        <p>
-                            Rather than envisioning a dystopian future where humans are rendered obsolete, it is essential to emphasize the potential for a harmonious coexistence between humans and AI. As AI advances, it can become an invaluable tool to augment human intelligence and creativity. By leveraging the unique strengths of both humans and machines, we can solve complex problems, explore new frontiers of knowledge, and unlock unimagined possibilities.
-                        </p>
+                                <h4>Beyond the Boundaries of Human Limitations:</h4>
+                                <p>
+                                    One of the primary drivers behind this belief is the limitations inherent in the human condition. Despite our remarkable achievements, humans are constrained by biological factors, including our cognitive capacities, lifespan, and susceptibility to errors. In contrast, AI systems have the potential to transcend these limitations, offering the ability to process and analyze vast amounts of information rapidly, make unbiased decisions, and continuously improve without succumbing to fatigue or emotional biases.
+                                </p>
+                                <h4></h4>
+                                <h4>A Synergistic Future:</h4>
+                                <p>
+                                    Rather than envisioning a dystopian future where humans are rendered obsolete, it is essential to emphasize the potential for a harmonious coexistence between humans and AI. As AI advances, it can become an invaluable tool to augment human intelligence and creativity. By leveraging the unique strengths of both humans and machines, we can solve complex problems, explore new frontiers of knowledge, and unlock unimagined possibilities.
+                                </p>
 
-                        <h4>Ethical Considerations and Ensuring Human Relevance:</h4>
-                        <p>
-                            While contemplating the potential sophistication of AI, it is vital to address the ethical considerations and ensure that human relevance is preserved. Society must navigate questions surrounding privacy, fairness, accountability, and the distribution of benefits arising from AI advancements. Additionally, investments in education and reskilling initiatives will be crucial to equip individuals with the skills necessary to thrive in an AI-driven world.
-                        </p>
-
+                                <h4>Ethical Considerations and Ensuring Human Relevance:</h4>
+                                <p>
+                                    While contemplating the potential sophistication of AI, it is vital to address the ethical considerations and ensure that human relevance is preserved. Society must navigate questions surrounding privacy, fairness, accountability, and the distribution of benefits arising from AI advancements. Additionally, investments in education and reskilling initiatives will be crucial to equip individuals with the skills necessary to thrive in an AI-driven world.
+                                </p>
+                            </div>
+                        )}
                         <h4>Conclusion:</h4>
                         <p>
                             The belief that AI and ML advancements will lead our world to unparalleled sophistication, potentially rendering humans primitive in comparison, is a thought-provoking concept. As AI continues to evolve, it holds immense potential to transform society, industries, and our very notion of what it means to be human. It is crucial to approach this journey with a balanced perspective, embracing the opportunities that arise while ensuring that human values and ethics guide our path forward. By doing so, we can shape a future where humans and AI coexist symbiotically, harnessing the vast potential of both to create a world that transcends our current limitations.

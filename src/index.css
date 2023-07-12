@@ -12,6 +12,12 @@
 # Main
 
 --------------------------------------------------------------*/
+
+.dashedLineHide {
+    border-bottom: 1px dashed #efefef;
+    margin-top: -35px;
+}
+
 .brandColors {
     color: #1EB6C3;
     color: #C8E7EA;
