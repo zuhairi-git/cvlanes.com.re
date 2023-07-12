@@ -7,7 +7,7 @@ class SocialMeida extends React.Component {
     return (
       <>
         <div className="pb-1 connectWithMe mt-5">
-          <span>Connect with me: </span>
+          <span>Let's Connect:</span>
           <a className="m-3 text-secondary" href="https://twitter.com/AliZohairi"><i class="fa-brands fa-twitter"></i></a>
           <a className="m-3 text-secondary" href="https://www.linkedin.com/in/ali-zuhairi/"><i class="fa-brands fa-linkedin-in"></i></a>
           <a className="m-3 text-secondary" href="https://www.facebook.com/zuhairi.one"><i class="fa-brands fa-facebook-f"></i></a>
