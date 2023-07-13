@@ -1,8 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import SocialMeida from '../generic/SocialMedia';
 
-const BlogPage = ({ id, title, to, image, content, style }) => {
+const BlogPage = ({ id, title, to, image, content, style, readMoreText }) => {
   const handleClick = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
@@ -16,7 +15,7 @@ const BlogPage = ({ id, title, to, image, content, style }) => {
           <p className="card-text" style={style}>{content}</p>
           <div className="mt-auto">
             <Link to={to} className="btn btn-primary" onClick={handleClick}>
-              Read More
+              {readMoreText}
             </Link>
           </div>
         </div>
@@ -28,12 +27,23 @@ const BlogPage = ({ id, title, to, image, content, style }) => {
 const BlogList = ({ idsToShow, style }) => {
   const blogs = [
     {
+      id: 4,
+      title: "Quantum AI",
+      to: '',
+      image: require('../img/blog/Human-AI/ai-quantum.jpg'),
+      content: 'Although I lack expertise in physics or scientific matters, the concept of entanglement, where two qubits can be connected instantaneously across vast distances in the universe, is undeniably eerie. Adding artificial intelligence to the equation only further amplifies the sense of spookiness. ',
+      hidden: false,
+      readMoreText: 'Coming Next',
+    },
+
+    {
       id: 3,
       title: "Embracing the Era of AI",
       to: '/blogs/premitive-human',
       image: require('../img/blog/Human-AI/chess-ai.webp'),
       content: 'I have a feeling that with the progress of AI and the advancements in machine learning, our world will reach such a level of sophistication that most humans may appear primitive once more.',
       hidden: false,
+      readMoreText: 'Read More',
     },
 
     {
@@ -43,6 +53,7 @@ const BlogList = ({ idsToShow, style }) => {
       image: require('../img/blog/iphone-mail-notifications.jpg'),
       content: 'Are you one of those people who have been experiencing difficulty getting notifications on your iPhone lately?',
       hidden: false,
+      readMoreText: 'Read More',
     },
 
     {
@@ -52,6 +63,7 @@ const BlogList = ({ idsToShow, style }) => {
       image: require('../img/blog-writing.jpg'),
       content: 'The circle of daily rhythm is the pattern of behaviors and activities that one follows throughout a typical day.',
       hidden: false,
+      readMoreText: 'Read More',
     },
 
   ];
@@ -71,6 +83,7 @@ const BlogList = ({ idsToShow, style }) => {
           image={blog.image}
           content={blog.content}
           style={style}
+          readMoreText={blog.readMoreText}
         />
       </div>
     ));
