@@ -78,11 +78,24 @@ class App extends React.Component {
                             <p>
                                 Additionally, it's crucial to establish a method for verifying both the job posting and the applicant to filter out the scams and enhance overall security.
                             </p>
+                            <p>
+                                In order to achieve transparency in the hiring process, it is essential that the process is accessible to all job applicants. This involves clearly outlining the job requirements and conducting a thorough comparison of applicants to determine the most suitable candidate in all steps.
+                            </p>
+                            <p>
+                                To streamline this process, a unified platform should be established to serve as a centralized database for job seekers. This eliminates the need for job applicants to register across multiple platforms. Instead, they can simply activate their profile for the specific platform they are applying to and interested in.
+                            </p>
+                            <p>
+                                The proposed framework for utilizing this database includes exploring options for seamless integration with various platforms, ensuring a cohesive and efficient experience for both employers and job seekers.
+                            </p>
                             <div className='text-center mb-5 mt-5'>
                                 <div className='bg-image'>
                                     <img className='w-100' src={require('../img/blog/hiring-process/hiring-process.jpg')} style={{ width: '100%' }} alt='Hiring' />
                                 </div>
                             </div>
+                            <p>
+                                Our shared goal is to see individuals begin their professional quests and lead lives filled with purpose. To nurture a continuous dedication to self-improvement and fortify one's self-assurance, it is crucial to provide adequate information that is customized to the particular areas in which personal growth is being pursued.
+                                This transformation will fundamentally reshape the hiring process, shifting it from a simple acceptance or rejection model to a platform that can provide constructive feedback for enhancement. Furthermore, you can see your improvement and growth by sign in into one platform.
+                            </p>
                         </section>
 
                         <section>
