@@ -80,7 +80,7 @@ class App extends React.Component {
                             </p>
                             <div className='text-center mb-5 mt-5'>
                                 <div className='bg-image'>
-                                    <img className='w-100' src={require('../img/blog/hiring-process.jpg')} style={{ width: '100%' }} alt='Hiring' />
+                                    <img className='w-100' src={require('../img/blog/hiring-process/hiring-process.jpg')} style={{ width: '100%' }} alt='Hiring' />
                                 </div>
                             </div>
                         </section>
@@ -90,15 +90,45 @@ class App extends React.Component {
                                 <h3 className='mt-5'>Framwork</h3>
                                 <div className='titleUnderLine mb-4'></div>
                             </div>
-                            <div className='text-center mb-5 mt-5'>
-                                <div className='bg-image'>
-                                    <img className='w-100 shadow-lg p-3 mb-5 bg-white rounded' src={require('../img/blog/hiring-process-framwork.png')} style={{ width: '100%' }} alt='Framwork' />
+                            <div className='mb-5'>
+                                <h4>
+                                    Permission from Te-Office:
+                                </h4>
+                                <div className='text-center mb-1 mt-1'>
+                                    <div className='bg-image'>
+                                        <img className='w-100 rounded' src={require('../img/blog/hiring-process/Permission.png')} style={{ width: '100%' }} alt='Framwork' />
+                                    </div>
                                 </div>
+                                <p>
+                                    Text
+                                </p>
                             </div>
-
-                            <p>
-                                Here
-                            </p>
+                            <div className='mb-5'>
+                                <h4>
+                                    Candidates Qualifications:
+                                </h4>
+                                <div className='text-center mb-1 mt-1'>
+                                    <div className='bg-image'>
+                                        <img className='w-100 rounded' src={require('../img/blog/hiring-process/Candidates.png')} style={{ width: '100%' }} alt='Framwork' />
+                                    </div>
+                                </div>
+                                <p>
+                                    Text
+                                </p>
+                            </div>
+                            <div className='mb-5'>
+                                <h4>
+                                    First Interview:
+                                </h4>
+                                <div className='text-center mb-1 mt-1'>
+                                    <div className='bg-image'>
+                                        <img className='w-100 rounded' src={require('../img/blog/hiring-process/Interview-1.png')} style={{ width: '100%' }} alt='Framwork' />
+                                    </div>
+                                </div>
+                                <p>
+                                    Text
+                                </p>
+                            </div>
                         </section>
 
                         <SocialMeida />
