@@ -27,13 +27,23 @@ const BlogPage = ({ id, title, to, image, content, style, readMoreText }) => {
 const BlogList = ({ idsToShow, style }) => {
   const blogs = [
     {
-      id: 5,
+      id: 15,
       title: "Quantum AI",
       to: '',
       image: require('../img/blog/Human-AI/ai-quantum.jpg'),
       content: 'Although I lack expertise in physics or scientific matters, the concept of entanglement, where two qubits can be connected instantaneously across vast distances in the universe, is undeniably eerie. Adding artificial intelligence to the equation only further amplifies the sense of spookiness. ',
       hidden: false,
       readMoreText: 'Coming Next',
+    },
+
+    {
+      id: 5,
+      title: "Suggesting the implementation of a transparency mandate for the hiring procedure",
+      to: '/blogs/hiring-process',
+      image: require('../img/blog/hiring-process.jpg'),
+      content: 'Suggesting the implementation of a transparency mandate for the hiring procedure',
+      hidden: true,
+      readMoreText: 'Read More',
     },
 
     {

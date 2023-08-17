@@ -10,6 +10,7 @@ import Blog01 from "./blogs/Blog01";
 import Blog02 from "./blogs/Blog02";
 import Blog03 from "./blogs/Blog03";
 import Blog04 from "./blogs/Blog04";
+import Blog05 from "./blogs/Blog05";
 
 function App() {
   const location = useLocation();
@@ -91,18 +92,29 @@ function App() {
           imageAlt: "Notifications on iOS",
         };
 
-      case "/blogs/premitive-human":
-        return {
-          title: "Embracing the Era of AI",
-          description: "Humanity's Journey to Unparalleled Sophistication",
-          ogType: "article",
-          ogImage: "https://cvlanes.com/img/blog/Human-AI/human-AI-jpg",
-          ogImageWidth: "1200",
-          ogImageHeight: "630",
-          imageAlt: "Era of AI",
-        };
-
-
+        case "/blogs/premitive-human":
+          return {
+            title: "Embracing the Era of AI",
+            description: "Humanity's Journey to Unparalleled Sophistication",
+            ogType: "article",
+            ogImage: "https://cvlanes.com/img/blog/Human-AI/human-AI-jpg",
+            ogImageWidth: "1200",
+            ogImageHeight: "630",
+            imageAlt: "Era of AI",
+          };
+  
+          case "/blogs/hiring-process":
+            return {
+              title: "Suggesting the implementation of a transparency mandate for the hiring procedure",
+              description: "Suggesting the implementation of a transparency mandate for the hiring procedure",
+              ogType: "article",
+              ogImage: "https://cvlanes.com/img/blog/Human-AI/human-AI-jpg",
+              ogImageWidth: "1200",
+              ogImageHeight: "630",
+              imageAlt: "Recruitment Process",
+            };
+    
+      
       default:
         return {};
     }
@@ -143,6 +155,7 @@ function App() {
         <Route path="/blogs/ios-notifications" element={<Blog02 />} />
         <Route path="/blogs/premitive-human" element={<Blog03 />} />
         <Route path="/blogs/claude-ai" element={<Blog04 />} />
+        <Route path="/blogs/hiring-process" element={<Blog05 />} />
       </Routes>
     </HelmetProvider>
   );
