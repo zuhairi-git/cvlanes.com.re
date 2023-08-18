@@ -81,6 +81,12 @@ class App extends React.Component {
                             <p>
                                 In order to achieve transparency in the hiring process, it is essential that the process is accessible to all job applicants. This involves clearly outlining the job requirements and conducting a thorough comparison of applicants to determine the most suitable candidate in all steps.
                             </p>
+                            <div className='text-center mb-1 mt-1'>
+                                <div className='bg-image'>
+                                    <img className='rounded' src={require('../img/blog/hiring-process/Hiring-Flow.png')} style={{ maxWidth: '100%' }} alt='Framwork' />
+                                </div>
+                            </div>
+
                             <p>
                                 To streamline this process, a unified platform should be established to serve as a centralized database for job seekers. This eliminates the need for job applicants to register across multiple platforms. Instead, they can simply activate their profile for the specific platform they are applying to and interested in.
                             </p>
