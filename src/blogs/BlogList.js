@@ -40,7 +40,7 @@ const BlogList = ({ idsToShow, style }) => {
       id: 5,
       title: "Suggesting the implementation of a transparency mandate for the hiring procedure",
       to: '/blogs/hiring-process',
-      image: require('../img/blog/hiring-process.jpg'),
+      image: require('../img/blog/hiring-process/hiring-process.jpg'),
       content: 'Suggesting the implementation of a transparency mandate for the hiring procedure',
       hidden: true,
       readMoreText: 'Read More',
