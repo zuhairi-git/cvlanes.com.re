@@ -109,7 +109,7 @@ class App extends React.Component {
                                 </h4>
                                 <div className='text-center mb-1 mt-1'>
                                     <div className='bg-image'>
-                                        <img className='w-100 rounded' src={require('../img/blog/hiring-process/Permission.png')} style={{ width: '100%' }} alt='Framwork' />
+                                        <img className='rounded' src={require('../img/blog/hiring-process/Permission.png')} style={{ maxWidth: '100%' }} alt='Framwork' />
                                     </div>
                                 </div>
                                 <p>
@@ -122,7 +122,7 @@ class App extends React.Component {
                                 </h4>
                                 <div className='text-center mb-1 mt-1'>
                                     <div className='bg-image'>
-                                        <img className='w-100 rounded' src={require('../img/blog/hiring-process/Candidates.png')} style={{ width: '100%' }} alt='Framwork' />
+                                        <img className='rounded' src={require('../img/blog/hiring-process/Candidates.png')} style={{ maxWidth: '100%' }} alt='Framwork' />
                                     </div>
                                 </div>
                                 <p>
@@ -135,7 +135,7 @@ class App extends React.Component {
                                 </h4>
                                 <div className='text-center mb-1 mt-1'>
                                     <div className='bg-image'>
-                                        <img className='w-100 rounded' src={require('../img/blog/hiring-process/Interview-1.png')} style={{ width: '100%' }} alt='Framwork' />
+                                        <img className='rounded' src={require('../img/blog/hiring-process/Interview-1.png')} style={{ maxWidth: '100%' }} alt='Framwork' />
                                     </div>
                                 </div>
                                 <p>
