@@ -106,7 +106,7 @@ class App extends React.Component {
 
                         <section>
                             <div className='text-center'>
-                                <h3 className='mt-5'>Framwork</h3>
+                                <h3 className='mt-5'>Framework</h3>
                                 <div className='titleUnderLine mb-4'></div>
                             </div>
                             <div className='mb-5'>
