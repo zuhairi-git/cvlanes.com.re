@@ -88,7 +88,7 @@ class App extends React.Component {
                             </div>
 
                             <p>
-                                To streamline this process, a unified platform should be established to serve as a centralized database for job seekers. This eliminates the need for job applicants to register across multiple platforms. Instead, they can simply activate their profile for the specific platform they are applying to and interested in.
+                                To streamline this process, a unified platform should be established to serve as a centralized database for job seekers. This eliminates the need for job applicants to register across multiple platforms. Instead, they can easily register for platforms that have already been integrated with the TE-office.
                             </p>
                             <p>
                                 The proposed framework for utilizing this database includes exploring options for seamless integration with various platforms, ensuring a cohesive and efficient experience for both employers and job seekers.
