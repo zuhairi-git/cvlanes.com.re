@@ -111,7 +111,7 @@ class App extends React.Component {
                             </div>
                             <div className='mb-5'>
                                 <h4>
-                                    Permission from Te-Office:
+                                    Permission from Te-office:
                                 </h4>
                                 <p>
                                     For a more comprehensive grasp of the idea, let's suppose that the TE-office possesses both the capability and a user-friendly API suitable for integration across all platforms. This API can serve as the foundational registration method, allowing all TE-office job seeker clients with appropriate access to seamlessly apply for jobs.
