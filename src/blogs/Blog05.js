@@ -116,6 +116,9 @@ class App extends React.Component {
                                 <p>
                                     For a more comprehensive grasp of the idea, let's suppose that the TE-office possesses both the capability and a user-friendly API suitable for integration across all platforms. This API can serve as the foundational registration method, allowing all TE-office job seeker clients with appropriate access to seamlessly apply for jobs.
                                 </p>
+                                <p>
+                                    When using TE-office for applications, employers in Finland can be confident that the applicant possesses a valid job permit and that the provided information is reliable.
+                                </p>
                                 <div className='text-center mb-1 mt-1'>
                                     <div className='bg-image'>
                                         <img className='rounded' src={require('../img/blog/hiring-process/Permission.png')} style={{ maxWidth: '100%' }} alt='Framwork' />
