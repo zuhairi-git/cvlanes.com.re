@@ -125,7 +125,7 @@ class App extends React.Component {
                                     </div>
                                 </div>
                                 <p>
-                                    In order to submit an application for a job that mandates registration, you have the option to sign-in / sign-up using your TE-office account. This allows for the automatic population of many essential fields, such as your name, CV, phone number, email address, and more.
+                                    In order to submit an application for a job that mandates registration, you have the option to sign-in/sign-up using your TE-office account. This allows for the automatic population of many essential fields, such as your name, CV, phone number, email address, and more.
                                 </p>
                             </div>
                             <div className='mb-5'>
