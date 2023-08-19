@@ -136,6 +136,7 @@ class App extends React.Component {
                                     <div className='bg-image'>
                                         <img className='rounded' src={require('../img/blog/hiring-process/Candidates.png')} style={{ maxWidth: '100%' }} alt='Framwork' />
                                     </div>
+                                    <div className='description ms-3 mb-3'>To ensure the privacy of personal data as set by GDPR, it is necessary to encrypt the names of the candidates.</div>
                                 </div>
                                 <p>
                                     Text

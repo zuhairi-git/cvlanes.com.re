@@ -12,6 +12,12 @@
 # Main
 
 --------------------------------------------------------------*/
+.description {
+    font-size: 10px;
+    color: #8c8c8c !important;
+    font-style: italic;
+}
+
 .connectWithMe {
     background: #fff;
     text-align: center;
@@ -21,7 +27,6 @@
     font-size:  14px;
     width: auto;
 }
-
 
 .dashedLineHide {
     border-bottom: 1px dashed #d8d8d8;
