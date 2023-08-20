@@ -111,7 +111,7 @@ class App extends React.Component {
                             </div>
                             <div className='mb-5'>
                                 <h4>
-                                    Permission from Te-office:
+                                    Permission to get your information from Te-office:
                                 </h4>
                                 <p>
                                     For a more comprehensive grasp of the idea, let's suppose that the TE-office possesses both the capability and a user-friendly API suitable for integration across all platforms. This API can serve as the foundational registration method, allowing all TE-office job seeker clients with appropriate access to seamlessly apply for jobs.
@@ -128,6 +128,22 @@ class App extends React.Component {
                                     In order to submit an application for a job that mandates registration, you have the option to sign-in/sign-up using your TE-office account. This allows for the automatic population of many essential fields, such as your name, CV, phone number, email address, and more.
                                 </p>
                             </div>
+                            
+                            <div className='mb-5'>
+                                <h4>
+                                    Fill the Form
+                                </h4>
+                                <p>
+                                    Each job posting should include a section where applicants can specify their relevant skills based on the job description. This approach simplifies the process of identifying the most suitable candidates and serves as a solid starting point for the selection process.
+                                </p>
+                                <div className='text-center mb-1 mt-1'>
+                                    <div className='bg-image'>
+                                        <img className='rounded' src={require('../img/blog/hiring-process/Fill-Form.png')} style={{ maxWidth: '100%' }} alt='Framwork' />
+                                    </div>
+                                    <div className='description ms-3 mb-3'>This should be part of the process, rather than the entire process itself.</div>
+                                </div>
+                            </div>
+
                             <div className='mb-5'>
                                 <h4>
                                     Candidates Qualifications:
