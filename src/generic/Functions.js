@@ -1,5 +1,3 @@
-// CopyrightFunctions.js
-
 import React from 'react';
 
 export function CopyrightImageLong() {
