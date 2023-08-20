@@ -11,7 +11,7 @@ import { CopyrightImageLong } from '../generic/Functions';
 
 class App extends React.Component {
     state = {
-        showAdditionalContent: false,
+        showAdditionalContent: true,
         showHideButton: false,
         // Copyright Image
         showCopyrightImage: true,

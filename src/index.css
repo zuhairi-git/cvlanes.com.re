@@ -13,7 +13,8 @@
 
 --------------------------------------------------------------*/
 .imageCopyright {
-    background-color: #ededed;
+    background-color: #ffffff;
+    border: 1px solid #dbdbdb;
     color: #939393;
     border-radius: 100px;
     padding: 2px 8px 3px;
@@ -22,7 +23,9 @@
 }
 
 .imageCopyrightContainer {
-    margin-bottom: -12px;
+    margin-bottom: -20px;
+    z-index: auto;
+    position: relative;
 }
 
 .description {
