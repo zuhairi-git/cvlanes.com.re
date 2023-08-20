@@ -7,7 +7,7 @@ import BlogList from './BlogList';
 import { Container, Row, Col } from 'react-bootstrap';
 import BackToTopButton from '../generic/BackToTopButton';
 import SocialMeida from '../generic/SocialMedia';
-import CopyrightImage from '../generic/CopyrightImage';
+import { CopyrightImageLong } from '../generic/Functions';
 
 class App extends React.Component {
     state = {
@@ -122,7 +122,7 @@ class App extends React.Component {
                                 </p>
                                 <div className='text-center mb-1 mt-1'>
                                     <div className='bg-image'>
-                                        <CopyrightImage />
+                                        <CopyrightImageLong />
                                         <img className='rounded' src={require('../img/blog/hiring-process/Permission.png')} style={{ maxWidth: '100%' }} alt='Framwork' />
                                     </div>
                                 </div>
@@ -140,7 +140,7 @@ class App extends React.Component {
                                 </p>
                                 <div className='text-center mb-1 mt-1'>
                                     <div className='bg-image'>
-                                        <CopyrightImage />
+                                        <CopyrightImageLong />
                                         <img className='rounded' src={require('../img/blog/hiring-process/Fill-Form.png')} style={{ maxWidth: '100%' }} alt='Framwork' />
                                     </div>
                                     <div className='description ms-3 mb-3'>This should be part of the process, rather than the entire process itself.</div>
@@ -153,7 +153,7 @@ class App extends React.Component {
                                 </h4>
                                 <div className='text-center mb-1 mt-1'>
                                     <div className='bg-image'>
-                                        <CopyrightImage />
+                                        <CopyrightImageLong />
                                         <img className='rounded' src={require('../img/blog/hiring-process/Candidates.png')} style={{ maxWidth: '100%' }} alt='Framwork' />
                                     </div>
                                     <div className='description ms-3 mb-3'>To ensure the privacy of personal data as set by GDPR, it is necessary to encrypt the names of the candidates.</div>
@@ -168,7 +168,7 @@ class App extends React.Component {
                                 </h4>
                                 <div className='text-center mb-1 mt-1'>
                                     <div className='bg-image'>
-                                        <CopyrightImage />
+                                        <CopyrightImageLong />
                                         <img className='rounded' src={require('../img/blog/hiring-process/Interview-1.png')} style={{ maxWidth: '100%' }} alt='Framwork' />
                                     </div>
                                 </div>
