@@ -7,6 +7,7 @@ import BlogList from './BlogList';
 import { Container, Row, Col } from 'react-bootstrap';
 import BackToTopButton from '../generic/BackToTopButton';
 import SocialMeida from '../generic/SocialMedia';
+import CopyrightImage from '../generic/CopyrightImage';
 
 class App extends React.Component {
     state = {
@@ -99,7 +100,7 @@ class App extends React.Component {
                                 </div>
                             </div>
                             <p>
-                                Our shared goal is to see individuals begin their professional quests and lead lives filled with purpose. To nurture a continuous dedication to self-improvement and fortify one's self-assurance, it is crucial to provide adequate information that is customized to the particular areas in which personal growth is being pursued.
+                                To nurture a continuous dedication to self-improvement and fortify one's self-assurance, it is crucial to provide adequate information that is customized to the particular areas in which personal growth is being pursued.
                                 This transformation will fundamentally reshape the hiring process, shifting it from a simple acceptance or rejection model to a platform that can provide constructive feedback for enhancement. Furthermore, you can see your improvement and growth by sign in into one platform.
                             </p>
                         </section>
@@ -121,6 +122,7 @@ class App extends React.Component {
                                 </p>
                                 <div className='text-center mb-1 mt-1'>
                                     <div className='bg-image'>
+                                        <CopyrightImage />
                                         <img className='rounded' src={require('../img/blog/hiring-process/Permission.png')} style={{ maxWidth: '100%' }} alt='Framwork' />
                                     </div>
                                 </div>
@@ -128,7 +130,7 @@ class App extends React.Component {
                                     In order to submit an application for a job that mandates registration, you have the option to sign-in/sign-up using your TE-office account. This allows for the automatic population of many essential fields, such as your name, CV, phone number, email address, and more.
                                 </p>
                             </div>
-                            
+
                             <div className='mb-5'>
                                 <h4>
                                     Fill the Form
@@ -138,6 +140,7 @@ class App extends React.Component {
                                 </p>
                                 <div className='text-center mb-1 mt-1'>
                                     <div className='bg-image'>
+                                        <CopyrightImage />
                                         <img className='rounded' src={require('../img/blog/hiring-process/Fill-Form.png')} style={{ maxWidth: '100%' }} alt='Framwork' />
                                     </div>
                                     <div className='description ms-3 mb-3'>This should be part of the process, rather than the entire process itself.</div>
@@ -150,6 +153,7 @@ class App extends React.Component {
                                 </h4>
                                 <div className='text-center mb-1 mt-1'>
                                     <div className='bg-image'>
+                                        <CopyrightImage />
                                         <img className='rounded' src={require('../img/blog/hiring-process/Candidates.png')} style={{ maxWidth: '100%' }} alt='Framwork' />
                                     </div>
                                     <div className='description ms-3 mb-3'>To ensure the privacy of personal data as set by GDPR, it is necessary to encrypt the names of the candidates.</div>
@@ -164,6 +168,7 @@ class App extends React.Component {
                                 </h4>
                                 <div className='text-center mb-1 mt-1'>
                                     <div className='bg-image'>
+                                        <CopyrightImage />
                                         <img className='rounded' src={require('../img/blog/hiring-process/Interview-1.png')} style={{ maxWidth: '100%' }} alt='Framwork' />
                                     </div>
                                 </div>

@@ -12,6 +12,19 @@
 # Main
 
 --------------------------------------------------------------*/
+.imageCopyright {
+    background-color: #ededed;
+    color: #939393;
+    border-radius: 100px;
+    padding: 2px 8px 3px;
+    font-size: 9px;
+    font-style: italic;
+}
+
+.imageCopyrightContainer {
+    margin-bottom: -12px;
+}
+
 .description {
     font-size: 10px;
     color: #8c8c8c !important;
