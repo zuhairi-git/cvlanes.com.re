@@ -65,7 +65,7 @@ class App extends React.Component {
 
                         <div className='quoteContainer mb-5'>
                             <q className='mb-4'>
-                                Enhancing transparency isn't just about processes; it's about crafting a seamless journey that empowers job seekers and employers. Verifying job posts and applicants adds security, while a unified platform fosters accessibility and efficient hiring. The journey should be fueled by continuous improvement and personalized growth
+                                Enhancing transparency isn't just about processes; it's about crafting a seamless journey that empowers job seekers and employers. Verifying job posts and applicants adds security, while a unified platform fosters accessibility and efficient hiring. The journey should be fueled by continuous improvement and personalized growth.
                             </q>
                             <p className='quoteLine'>
                                 Ali
