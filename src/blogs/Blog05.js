@@ -12,13 +12,12 @@ import { CopyrightImageLong } from '../generic/Functions';
 class App extends React.Component {
     state = {
         showAdditionalContent: false,
-        showHideButton: false
+        showHideButton: false,
+        // Copyright Image
+        showCopyrightImage: true,
+
     };
 
-    // Copyright Image
-    state = {
-        showCopyrightImage: true,
-    };
     componentDidMount() {
         new WOW.WOW({
             live: false
