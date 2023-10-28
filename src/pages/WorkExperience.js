@@ -17,7 +17,7 @@ const experiences = [
     date: '2014 - 2016',
     position: 'Graphic Designer UI/UX & IT Expert',
     company: 'Reslink, Helsinki, Finland',
-    description: 'Graphic and Website Designer, Android and iOS Graphics and Prototype.',
+    description: 'Graphic & Website Designer, Android and iOS Prototyping, & MDM Management.',
   },
   {
     date: '2000 - 2014',
